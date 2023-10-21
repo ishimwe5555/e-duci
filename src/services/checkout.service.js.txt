@@ -1,0 +1,48 @@
+import Order from '../database/models/order.model';
+// import ShippingAddress from '../database/models/shippingAddress.model';
+import Product from '../database/models/products.model';
+
+async function createOrder(orderDetails) {
+  const order = await Order.create(orderDetails);
+  return order;
+}
+
+async function addShippingAddress(shippingDetails) {
+  const shippingAddress = await ShippingAddress.create(shippingDetails);
+  return shippingAddress;
+}
+
+async function getShippingAddress(userId) {
+  const shippingAddress = await ShippingAddress.findOne({ where: { userId } });
+  return shippingAddress;
+}
+
+async function updateShippingAddress(userId, updatedAddress) {
+  const shippingAddress = await ShippingAddress.findOne({ where: { userId } });
+  shippingAddress.firstName = updatedAddress.firstName;
+  shippingAddress.lastName = updatedAddress.lastName;
+  shippingAddress.phoneNumber = updatedAddress.phoneNumber;
+  shippingAddress.streetAddress = updatedAddress.streetAddress;
+  shippingAddress.country = updatedAddress.country;
+  shippingAddress.city = updatedAddress.city;
+  shippingAddress.postalCode = updatedAddress.postalCode;
+  const updated = await shippingAddress.save();
+  return updated;
+}
+
+async function updateProductQuantity(productId, quantity) {
+  const product = await Product.findOne({
+    where: { id: productId },
+  });
+
+  product.quantity -= quantity;
+  await product.save();
+}
+
+export default {
+  createOrder,
+  addShippingAddress,
+  getShippingAddress,
+  updateShippingAddress,
+  updateProductQuantity,
+};

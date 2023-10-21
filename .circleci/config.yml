@@ -1,0 +1,43 @@
+version: 2.1
+jobs: 
+  run_tests:
+    docker: 
+      - image: circleci/node:16
+      - image: circleci/postgres:latest
+        environment:
+          POSTGRES_DB: postgres
+          POSTGRES_USER: postgres 
+          POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+          repo_token: ${repo_token}
+          CC_TEST_REPORTER_ID: ${CC_TEST_REPORTER_ID}
+    steps:
+      - checkout
+      - run:
+          name: Install npm dependencies
+          command:  npm install 
+      - run:
+          name: Install npm dev dependencies
+          command: npm install mocha c8 chai-http chai coveralls
+      - run:
+          name: Run Migrations and Seeds
+          command: npm run migrate  -- --env test && npm run seed  -- --env test 
+      - run:
+          name: Run Unit Tests
+          command: npm run coverage
+      - run:
+          name: Upload coverage to Coveralls
+          command: npx coveralls < coverage/lcov.info
+      - run:
+          name: Upload Coverage to CodeClimate
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+            ./cc-test-reporter before-build
+            ./cc-test-reporter after-build --exit-code $? -t lcov --prefix coverage
+      - run:
+          name: Undo Seeds and Migrations
+          command: npm run seed_undo_all  -- --env test && npm run migrate_undo_all -- --env test
+workflows:
+  build_tests:
+    jobs:
+      - run_tests

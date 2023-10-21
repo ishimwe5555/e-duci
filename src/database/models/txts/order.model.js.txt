@@ -1,0 +1,46 @@
+import { DataTypes } from 'sequelize';
+import sequelize from '../config/db.js';
+import User from './user.model.js';
+// import ShippingAddress from './shippingAddress.model.js';
+
+const Order = sequelize.define('orders', {
+  id: {
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4,
+    allowNull: false,
+    primaryKey: true,
+  },
+  status: {
+    type: DataTypes.ENUM(
+      'pending',
+      'confirmed',
+      'incomplete',
+      'succeeded',
+      'failed'
+    ),
+    defaultValue: 'pending',
+  },
+  products: {
+    type: DataTypes.ARRAY(DataTypes.JSON),
+    defaultValue: [],
+  },
+  totalPrice: {
+    type: DataTypes.DOUBLE,
+    allowNull: false,
+  },
+});
+
+User.hasMany(Order, {
+  as: 'user',
+  foreignKey: 'userId',
+  onDelete: 'cascade',
+  onUpdate: 'CASCADE',
+});
+
+Order.belongsTo(ShippingAddress, {
+  as: 'shippingaddresses',
+  allowNull: false,
+  foreignKey: 'shippingId',
+});
+
+export default Order;

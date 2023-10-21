@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat System</title>
+    <link rel="stylesheet" type="text/css" href= "/chat/style.css"/>
+  </head>
+  <body>
+    <div class="container" id="mydiv">
+        <h1 id="mydivheader">Chat</h1>
+        <div id="loading"><p id="p"></p></div>
+      <div class="user" id="user"></div>
+      <div class="chat-container" id="chat-container" >
+      </div>
+      <div id="handle"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input"></input>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        let username = '';
+        let id;
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        document.getElementById('chat-container').scrollTop += 500;
+        function loading(par, text){
+            if(par) {
+                document.getElementById('loading').style.display = 'none';
+            }
+            document.getElementById('p').innerText = text || 'Connecting...';
+        }
+        loading(false)
+        connecting();
+        function connecting() {
+          const socket = io({
+            query: { authToken: token }
+          });
+          if(socket.id) {
+            loading(true);
+          }
+          socket.on('unauthorized', (alerting) => {
+            loading(false, 'Please Provide Auth Token')
+          })
+          const messagesUl = document.getElementById('chat-container');
+          const chatForm = document.getElementById('chat-form');
+          const chatInput = document.getElementById('chat-input');
+          const handle = document.getElementById('handle');
+          var timeout;
+          socket.emit('join');
+          socket.on('joined', (data) => {
+            id = data.id,
+            username = data.username
+            document.getElementById('user').innerText = username;
+          })
+          id = socket.id
+          const userId = socket.id;
+          messagesUl.scrollTop += 500;
+          socket.on('userJoined', (user) => {
+            messagesUl.scrollTop += 500;
+            const alerting = document.createElement('p');
+            alerting.classList.add('alerting');
+            messagesUl.appendChild(alerting);
+            alerting.innerText = user
+            loading(true)
+          })
+          socket.on('userLeft', (user) => {
+            messagesUl.scrollTop += 500;
+            if(username != 'undefined') {
+              const alerting = document.createElement('p');
+              alerting.classList.add('alerting-bad');
+              messagesUl.appendChild(alerting);
+              alerting.innerText = user
+            }
+          })
+          chatForm.addEventListener('submit', (event) => {
+            if(username === 'undefined') {
+              location.reload();
+            }
+            event.preventDefault();
+            const message = chatInput.value;
+            socket.emit('message', message);
+            chatInput.value = '';
+          });
+          function timeoutFunction() {
+            socket.emit("typing", false);
+            socket.emit("new-notification", "Hello world");
+          }
+          socket.on('message', (message) => {
+            messagesUl.scrollTop += 500;
+            const messageRow = document.createElement('div')
+            const messageLi = document.createElement('div');
+            const messageUsername = document.createElement('p');
+            const messageDate = document.createElement('span');
+            if(message.userId == id) {
+              messageLi.innerText = timeSince(message.date);
+              messageUsername.innerHTML = "me"
+              messageRow.classList.add('sent');
+              messageDate.classList.add('time');
+            }
+            else {
+              messageUsername.innerHTML = message.username;
+              messageRow.classList.add('incoming');
+              messageDate.classList.add('time-in');
+            }
+            messageLi.classList.add('box');
+            messageLi.innerText = message.message;
+            messageDate.innerText = `${timeSince(message.date)} ago`;
+            messageRow.appendChild(messageLi);
+            messageLi.appendChild(messageDate);
+            messageRow.appendChild(messageUsername);
+            messagesUl.appendChild(messageRow);
+            messagesUl.scrollTop += 500;
+            handle.innerText = ""
+          });
+          socket.on('typing', (user) => {
+            if (user) {
+              handle.innerText = `${user} is typing...`;
+            } else {
+              handle.innerText = '';
+            }
+          })
+          chatInput.addEventListener('keyup',function(){
+            socket.emit('typing', username);
+            clearTimeout(timeout)
+            timeout = setTimeout(timeoutFunction, 2000)
+           })
+        }
+        function timeSince(time) {
+          const date = new Date(time)
+          var seconds = Math.floor((new Date() - date) / 1000);
+          var interval = seconds / 31536000;
+          if (interval > 1) {
+            return Math.floor(interval) + " years";
+          }
+          interval = seconds / 2592000;
+          if (interval > 1) {
+            return Math.floor(interval) + " months";
+          }
+          interval = seconds / 86400;
+          if (interval > 1) {
+            return Math.floor(interval) + " days";
+          }
+          interval = seconds / 3600;
+          if (interval > 1) {
+            return Math.floor(interval) + " hours";
+          }
+          interval = seconds / 60;
+          if (interval > 1) {
+            return Math.floor(interval) + " minutes";
+          }
+          return Math.floor(seconds) + " seconds";
+        }
+    </script>
+    <script>
+      dragElement(document.getElementById("mydiv"));
+      function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+          document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } else {
+          elmnt.onmousedown = dragMouseDown;
+        }
+        function dragMouseDown(e) {
+          e = e || window.event;
+          e.preventDefault();
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          document.onmouseup = closeDragElement;
+          document.onmousemove = elementDrag;
+        }
+        function elementDrag(e) {
+          e = e || window.event;
+          e.preventDefault();
+          pos1 = pos3 - e.clientX;
+          pos2 = pos4 - e.clientY;
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+          elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+        function closeDragElement() {
+          document.onmouseup = null;
+          document.onmousemove = null;
+        }
+      }
+    </script>
+  </body>
+</html>

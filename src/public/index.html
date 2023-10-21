@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="notifications/style.css" />
+    <title>Notifications</title>
+  </head>
+  <body>
+    <div class="message_box">
+      <div class="message_box_label" id="nameHolder"></div>
+      <div class="message_list_container">
+        <ul class="message_list" id="box"></ul>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const token = urlParams.get('token');
+      const user = {
+        data: {},
+      };
+      connecting(user);
+      function connecting(user) {
+        username = `${user.data.username}`;
+        const socket = io({
+          query: { authToken: token },
+        });
+        socket.on('unauthorized', (alerting) => {
+          alert(`Login First ${alerting}`);
+        });
+        socket.emit('join');
+        socket.id = user.data.id;
+        const userId = socket.id;
+        socket.on('joined', (data) => {
+          document.getElementById(
+            'nameHolder'
+          ).innerText = `Notifications For ${data.username}`;
+          socket.emit('all-notifications', data);
+        });
+        socket.on('my-notifications', (nots) => {
+          for (let i = 0; i < nots.length; i += 1) {
+            appendMessage(nots[i].message, nots[i].title, nots[i].date);
+          }
+        });
+        socket.on('notification', (notification) => {
+          appendMessage(
+            notification.message,
+            notification.title,
+            notification.date
+          );
+        });
+      }
+      function appendMessage(messageText, messageTitle, messageDate) {
+        const messageList = document.getElementById('box');
+        const newMessage = document.createElement('li');
+        const title = document.createElement('h1');
+        title.innerText = messageTitle;
+        newMessage.classList.add('message_content');
+
+        const messageFullText = document.createElement('p');
+        messageFullText.classList.add('message_full_text');
+        messageFullText.textContent = messageText;
+        newMessage.appendChild(title);
+        newMessage.appendChild(messageFullText);
+
+        const messageDateSpan = document.createElement('span');
+        messageDateSpan.classList.add('message_date');
+        messageDateSpan.textContent = messageDate;
+        newMessage.appendChild(messageDateSpan);
+
+        messageList.appendChild(newMessage);
+      }
+    </script>
+  </body>
+</html>

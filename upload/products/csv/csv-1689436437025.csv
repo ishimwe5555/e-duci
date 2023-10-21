@@ -1,0 +1,4 @@
+name,vendorId,subsubcategoryId,brand,price,pricing,description,shortDescription,productType,ageRange,subject,userGroups,classLevel,productFunction,interaction,language,curriculum,courses,keywords
+Product A,12345,67890,Brand X,19.99,Premium,"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",Short description of Product A,Software,10-12,Science,Students,05,Exam preparation,Individual,English,Curriculum A,Course A,keyword1
+Product B,54321,09876,Brand Y,9.99,Free,"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",Short description of Product B,App,13-15,Math,Students,06,Homework and assignment management,Individual,German,Curriculum B,Course B,keyword3
+Product C,98765,43210,Brand Z,14.99,Premium,"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",Short description of Product C,Software,16-17,History,Students,07,Quiz Export/import possible,Classroom,Spanish,Curriculum C,Course C,keyword5

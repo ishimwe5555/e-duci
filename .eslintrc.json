@@ -1,0 +1,74 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb-base",
+    "airbnb-base",
+    "prettier",
+    "airbnb/hooks",
+    "plugin:mocha/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["node", "prettier", "eslint-plugin-node", "mocha"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "settings": {
+    "import/extensions": [".js"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"]
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true,"endOfLine": "auto" }],
+    "one-var": 0,
+    "no-console":0,
+    "no-undef": 0,
+    "global-require": 0,
+    "mocha/max-top-level-suites": 0,
+    "mocha/no-identical-title": 0,
+    "one-var-declaration-per-line": 0,
+    "new-cap": 0,
+    "import/no-import-module-exports": 0,
+    "consistent-return": 0,
+    "no-param-reassign": 0,
+    "func-names": [0, "always"],
+    "import/extensions": [
+      0,
+      "ignorePackages",
+      {
+        "js": "never"
+      }
+    ],
+    "comma-dangle": 0,
+    "curly": ["error", "multi-line"],
+    "import/no-unresolved": [2, { "commonjs": true }],
+    "no-shadow": ["error", { "allow": ["req", "res", "err"] }],
+    "valid-jsdoc": [
+      "error",
+      {
+        "requireReturn": true,
+        "requireReturnType": true,
+        "requireParamDescription": false,
+        "requireReturnDescription": true
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed"],
+    "require-jsdoc": [
+      0,
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true
+        }
+      }
+    ]
+  }
+}
+

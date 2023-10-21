@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Orders</title>
+  </head>
+  <body>
+    <h1>My orders notifications</h1>
+
+    <script>
+      const ws = new WebSocket('ws://localhost:4000/notify-orders');
+
+      ws.addEventListener('open', () => {
+        console.log('Connected to WebSocket server');
+      });
+
+      ws.addEventListener('message', (event) => {
+        const data = JSON.parse(event.data);
+
+        if (data.type === 'orderStatusUpdated') {
+          // Display the notification to the user
+          console.log(data.message);
+        }
+      });
+
+      ws.addEventListener('close', () => {
+        console.log('Disconnected from WebSocket server');
+      });
+    </script>
+  </body>
+</html>
