@@ -27,7 +27,7 @@ if (process.env.SSL === 'true') {
 const sequelize = new Sequelize(db.DATABASE, db.USER, db.PASSWORD, {
   host: db.HOST,
   dialect: 'mysql',
-  port: 3306,
+ // port: 3306,
 });
 
 sequelize.authenticate();

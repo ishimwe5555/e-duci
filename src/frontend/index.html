@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head> 
+    <meta name="app-url" content="educi">
+    <title>EDUCI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="EDUCI" />
+    <meta name="keywords" content="educi">
+    <!-- Favicon -->
+    <link rel="icon" href="public/assets/img/app.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="public/assets/css/vendors.css">
+    <link rel="stylesheet" href="public/assets/css/aiz-coreebe5.css">
+    <link rel="stylesheet" href="public/assets/css/custom-style.css">
+    <script>
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '');
+    </script>
+
+
+
+</head>
+<body>
+    <!-- aiz-main-wrapper -->
+    <div class="aiz-main-wrapper d-flex flex-column bg-white">
+<!-- Header -->
+<!-- Top Bar -->
+<div class="top-navbar bg-white z-1035 h-35px h-sm-auto">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6 col">
+             <ul class="list-inline d-flex justify-content-between justify-content-lg-start mb-0">
+                <!-- Language switcher -->
+                <li class="list-inline-item dropdown mr-4" id="lang-change">
+                   <a href="javascript:void(0)" class="dropdown-toggle text-secondary fs-12 py-2" data-toggle="dropdown" data-display="static">
+                   <span class="">English</span>
+                   </a>
+                   <ul class="dropdown-menu dropdown-menu-left">
+                      <li>
+                         <a href="javascript:void(0)" data-flag="en" class="dropdown-item ">
+                         <img src="public/assets/img/en.png" class="mr-1 lazyload" alt="English" height="11">
+                         <span class="language">English</span>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="javascript:void(0)" data-flag="bd" class="dropdown-item ">
+                         <img src="public/assets/img/de.png" class="mr-1 lazyload" alt="Bangla" height="11">
+                         <span class="language">Deutch</span>
+                         </a>
+                      </li>
+                   </ul>
+                </li>
+             </ul>
+          </div>
+          <div class="col-6 text-right d-none d-lg-block">
+             <ul class="list-inline mb-0 h-100 d-flex justify-content-end align-items-center">
+                <!-- Become a Seller -->
+                <li class="list-inline-item mr-0 pl-0 py-2">
+                   <a href="vendor-register.html" class="text-secondary fs-12 pr-3 d-inline-block border-width-2 border-right">Become a Vendor !</a>
+                </li>
+                <!-- Seller Login -->
+                <li class="list-inline-item mr-0 pl-0 py-2">
+                   <a href="#" class="text-secondary fs-12 pl-3 d-inline-block">Login to Vendor</a>
+                </li>
+                <!-- Helpline -->
+                <li class="list-inline-item ml-3 pl-3 mr-0 pr-0">
+                   <a href="tel:+01 112 352 566" class="text-secondary fs-12 d-inline-block py-2">
+                   <span>Helpline</span>  
+                   <span>+250788440817</span>    
+                   </a>
+                </li>
+             </ul>
+          </div>
+       </div>
+    </div>
+ </div>
+
+<header class=" sticky-top  z-1020 bg-white">
+    <!-- Search Bar -->
+    <div class="position-relative logo-bar-area border-bottom border-md-nonea z-1025">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <!-- top menu sidebar button -->
+                <button type="button" class="btn d-lg-none mr-3 mr-sm-4 p-0 active" data-toggle="class-toggle" data-target=".aiz-top-menu-sidebar">
+                    <svg id="Component_43_1" data-name="Component 43 – 1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <rect id="Rectangle_19062" data-name="Rectangle 19062" width="16" height="2" transform="translate(0 7)" fill="#919199"/>
+                        <rect id="Rectangle_19063" data-name="Rectangle 19063" width="16" height="2" fill="#919199"/>
+                        <rect id="Rectangle_19064" data-name="Rectangle 19064" width="16" height="2" transform="translate(0 14)" fill="#919199"/>
+                    </svg>
+                    
+                </button>
+                <!-- Header Logo -->
+                <div class="col-auto pl-0 pr-3 d-flex align-items-center">
+                    <a class="d-block py-20px mr-3 ml-0" href="#">
+                        <img src="public/assets/img/logo.png" alt="educi" class="mw-100 h-30px h-md-40px" height="40">
+                    </a>
+                </div>
+                <!-- Search Icon for small device -->
+                <div class="d-lg-none ml-auto mr-0">
+                    <a class="p-2 d-block text-reset" href="javascript:void(0);" data-toggle="class-toggle" data-target=".front-header-search">
+                        <i class="las la-search la-flip-horizontal la-2x"></i>
+                    </a>
+                </div> 
+                <!-- Search field -->
+                <div class="flex-grow-1 front-header-search d-flex align-items-center bg-white mx-xl-5">
+                    <div class="position-relative flex-grow-1 px-3 px-lg-0">
+                        <form action="#" method="GET" class="stop-propagation">
+                            <div class="d-flex position-relative align-items-center">
+                                <div class="d-lg-none" data-toggle="class-toggle" data-target=".front-header-search">
+                                    <button class="btn px-2" type="button"><i class="la la-2x la-long-arrow-left"></i></button>
+                                </div>
+                                <div class="search-input-box">
+                                    <input type="text" class="border border-soft-light form-control fs-14 hov-animate-outline" id="search" name="keyword"  placeholder="I am shopping for..." autocomplete="off">
+
+                                    <svg id="Group_723" data-name="Group 723" xmlns="http://www.w3.org/2000/svg" width="20.001" height="20" viewBox="0 0 20.001 20">
+                                        <path id="Path_3090" data-name="Path 3090" d="M9.847,17.839a7.993,7.993,0,1,1,7.993-7.993A8,8,0,0,1,9.847,17.839Zm0-14.387a6.394,6.394,0,1,0,6.394,6.394A6.4,6.4,0,0,0,9.847,3.453Z" transform="translate(-1.854 -1.854)" fill="#b5b5bf"/>
+                                        <path id="Path_3091" data-name="Path 3091" d="M24.4,25.2a.8.8,0,0,1-.565-.234l-6.15-6.15a.8.8,0,0,1,1.13-1.13l6.15,6.15A.8.8,0,0,1,24.4,25.2Z" transform="translate(-5.2 -5.2)" fill="#b5b5bf"/>
+                                    </svg>                    
+                                </div>
+                            </div>
+                        </form>
+                        <div class="typed-search-box stop-propagation document-click-d-none d-none bg-white rounded shadow-lg position-absolute left-0 top-100 w-100" style="min-height: 200px">
+                            <div class="search-preloader absolute-top-center">
+                                <div class="dot-loader"><div></div><div></div><div></div></div>
+                            </div>
+                            <div class="search-nothing d-none p-3 text-center fs-16">
+                            </div>
+                            <div id="search-content" class="text-left">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search box -->
+                <div class="d-none d-lg-none ml-3 mr-0">
+                    <div class="nav-search-box">
+                        <a href="#" class="nav-box-link">
+                            <i class="la la-search la-flip-horizontal d-inline-block nav-box-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Compare -->
+                <div class="d-none d-lg-block ml-3 mr-0">
+                    <div class="" id="compare">
+                        <a href="#" class="d-flex align-items-center text-dark" data-toggle="tooltip" data-title="Compare" data-placement="top">
+                            <span class="position-relative d-inline-block">
+                                <svg xmlns="#" width="16" height="16" viewBox="0 0 16 16">
+                                     <path id="_9f8e765afedd47ec9e49cea83c37dfea" data-name="9f8e765afedd47ec9e49cea83c37dfea" d="M18.037,5.547v.8a.8.8,0,0,1-.8.8H7.221a.4.4,0,0,0-.4.4V9.216a.642.642,0,0,1-1.1.454L2.456,6.4a.643.643,0,0,1,0-.909L5.723,2.227a.642.642,0,0,1,1.1.454V4.342a.4.4,0,0,0,.4.4H17.234a.8.8,0,0,1,.8.8Zm-3.685,4.86a.642.642,0,0,0-1.1.454v1.661a.4.4,0,0,1-.4.4H2.84a.8.8,0,0,0-.8.8v.8a.8.8,0,0,0,.8.8H12.854a.4.4,0,0,1,.4.4V17.4a.642.642,0,0,0,1.1.454l3.267-3.268a.643.643,0,0,0,0-.909Z" transform="translate(-2.037 -2.038)" fill="#919199"/>
+                                </svg>
+                            </span>
+                        </a>                    
+                    </div>
+                </div>
+                <!-- Wishlist -->
+                <div class="d-none d-lg-block mr-3" style="margin-left: 36px;">
+                    <div class="" id="wishlist">
+                        <a href="#" class="d-flex align-items-center text-dark" data-toggle="tooltip" data-title="Wishlist" data-placement="top">
+                            <span class="position-relative d-inline-block">
+                                <svg  width="16" height="14.4" viewBox="0 0 16 14.4">
+                                   <g id="_51a3dbe0e593ba390ac13cba118295e4" data-name="51a3dbe0e593ba390ac13cba118295e4" transform="translate(-3.05 -4.178)">
+                                       <path id="Path_32649" data-name="Path 32649" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                        <path id="Path_32650" data-name="Path 32650" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                 <!-- Notifications -->
+                <div class="d-none d-lg-block mr-3" style="margin-left: 36px;">
+                    <div class="" id="Notification">
+                        <a href="#" class="d-flex align-items-center text-dark" data-toggle="tooltip" data-title="Wishlist" data-placement="top">
+                            <span class="position-relative d-inline-block">
+                                <svg  width="14.668" height="16" viewBox="0 0 14.668 16">
+                                    <path id="_26._Notification" data-name="26. Notification" d="M8.333,16A3.34,3.34,0,0,0,11,14.667H5.666A3.34,3.34,0,0,0,8.333,16ZM15.06,9.78a2.457,2.457,0,0,1-.727-1.747V6a6,6,0,1,0-12,0V8.033A2.457,2.457,0,0,1,1.606,9.78,2.083,2.083,0,0,0,3.08,13.333H13.586A2.083,2.083,0,0,0,15.06,9.78Z" transform="translate(-0.999)" fill="#91919b"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ml-auto mr-0">
+                    <!--Login & Registration -->
+                    <span class="d-none d-xl-flex align-items-center nav-user-info ml-3">
+                       <!-- Image -->
+                       <span class="size-40px rounded-circle overflow-hidden border d-flex align-items-center justify-content-center nav-user-img">
+                          <svg xmlns="#" width="19.902" height="20.012" viewBox="0 0 19.902 20.012">
+                             <path id="fe2df171891038b33e9624c27e96e367" d="M15.71,12.71a6,6,0,1,0-7.42,0,10,10,0,0,0-6.22,8.18,1.006,1.006,0,1,0,2,.22,8,8,0,0,1,15.9,0,1,1,0,0,0,1,.89h.11a1,1,0,0,0,.88-1.1,10,10,0,0,0-6.25-8.19ZM12,12a4,4,0,1,1,4-4A4,4,0,0,1,12,12Z" transform="translate(-2.064 -1.995)" fill="#91919b"/>
+                          </svg>
+                       </span>
+                       <a href="users/login.html" class="text-reset opacity-60 hov-opacity-100 hov-text-primary fs-12 d-inline-block border-right border-soft-light border-width-2 pr-2 ml-3">Login</a>
+                       <a href="users/registration.html" class="text-reset opacity-60 hov-opacity-100 hov-text-primary fs-12 d-inline-block py-2 pl-2">Registration</a>
+                    </span>
+                 </div>
+            </div>
+        </div>
+        <!-- Loged in user Menus -->
+        <div class="hover-user-top-menu position-absolute top-100 left-0 right-0 z-3">
+            <div class="container">
+               <div class="position-static float-right">
+                  <div class="aiz-user-top-menu bg-white rounded-0 border-top shadow-sm" style="width:220px;">
+                     <ul class="list-unstyled no-scrollbar mb-0 text-left">
+                        <li class="user-top-nav-element border border-top-0" data-id="1">
+                           <a href="users/login.html" class="text-truncate text-dark px-4 fs-14 d-flex align-items-center hov-column-gap-1">
+                              <svg xmlns="#" width="16" height="16" viewBox="0 0 16 16">
+                                 <path id="Path_2916" data-name="Path 2916" d="M15.3,5.4,9.561.481A2,2,0,0,0,8.26,0H7.74a2,2,0,0,0-1.3.481L.7,5.4A2,2,0,0,0,0,6.92V14a2,2,0,0,0,2,2H14a2,2,0,0,0,2-2V6.92A2,2,0,0,0,15.3,5.4M10,15H6V9A1,1,0,0,1,7,8H9a1,1,0,0,1,1,1Zm5-1a1,1,0,0,1-1,1H11V9A2,2,0,0,0,9,7H7A2,2,0,0,0,5,9v6H2a1,1,0,0,1-1-1V6.92a1,1,0,0,1,.349-.76l5.74-4.92A1,1,0,0,1,7.74,1h.52a1,1,0,0,1,.651.24l5.74,4.92A1,1,0,0,1,15,6.92Z" fill="#b5b5c0"/>
+                              </svg>
+                              <span class="user-top-menu-name has-transition ml-3">Dashboard</span>
+                           </a>
+                        </li>
+                        <li class="user-top-nav-element border border-top-0" data-id="1">
+                           <a href="#" class="text-truncate text-dark px-4 fs-14 d-flex align-items-center hov-column-gap-1">
+                              <svg xmlns="#" width="16" height="15.999" viewBox="0 0 16 15.999">
+                                 <g id="Group_25503" data-name="Group 25503" transform="translate(-24.002 -377)">
+                                    <g id="Group_25265" data-name="Group 25265" transform="translate(-216.534 -160)">
+                                       <path id="Subtraction_192" data-name="Subtraction 192" d="M12052.535,2920a8,8,0,0,1-4.569-14.567l.721.72a7,7,0,1,0,7.7,0l.721-.72a8,8,0,0,1-4.567,14.567Z" transform="translate(-11803.999 -2367)" fill="#d43533"/>
+                                    </g>
+                                    <rect id="Rectangle_19022" data-name="Rectangle 19022" width="1" height="8" rx="0.5" transform="translate(31.5 377)" fill="#d43533"/>
+                                 </g>
+                              </svg>
+                              <span class="user-top-menu-name text-primary has-transition ml-3">Logout</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- Menu Bar -->
+    <div class="d-none d-lg-block position-relative bg-primary h-50px">
+        <div class="container h-100">
+            <div class="d-flex h-100">
+                <!-- Categoty Menu Button -->
+                <div class="d-none d-xl-block all-category has-transition bg-black-10" id="category-menu-bar">
+                    <div class="px-3 h-100" style="padding-top: 12px;padding-bottom: 12px; width:270px; cursor: pointer;">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="fw-700 fs-16 text-white mr-3">Categories</span>
+                                <a href="categories.html" class="text-reset">
+                                    <span class="d-none d-lg-inline-block text-white hov-opacity-80">(See All)</span>
+                                </a>
+                            </div>
+                            <i class="las la-angle-down text-white has-transition" id="category-menu-bar-icon" style="font-size: 1.2rem !important"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header Menus -->
+                <div class="ml-xl-4 w-100 overflow-hidden">
+                    <div class="d-flex align-items-center justify-content-center justify-content-xl-start h-100">
+                       <ul class="list-inline mb-0 pl-0 hor-swipe c-scrollbar-light">
+                          <li class="list-inline-item mr-0 animate-underline-white">
+                             <a href="index.html" 
+                                class="fs-13 px-3 py-3 d-inline-block fw-700 text-white header_menu_links hov-bg-black-10
+                                ">
+                             Home
+                             </a>
+                          </li>
+                          <li class="list-inline-item mr-0 animate-underline-white">
+                             <a href="#" 
+                                class="fs-13 px-3 py-3 d-inline-block fw-700 text-white header_menu_links hov-bg-black-10
+                                ">
+                             Primary software
+                             </a>
+                          </li>
+                          <li class="list-inline-item mr-0 animate-underline-white">
+                             <a href="X" 
+                                class="fs-13 px-3 py-3 d-inline-block fw-700 text-white header_menu_links hov-bg-black-10
+                                ">
+                             Seocondary software
+                             </a>
+                          </li>
+                          <li class="list-inline-item mr-0 animate-underline-white">
+                             <a href="brands.html" 
+                                class="fs-13 px-3 py-3 d-inline-block fw-700 text-white header_menu_links hov-bg-black-10
+                                ">
+                             University software
+                             </a>
+                          </li>
+                          <li class="list-inline-item mr-0 animate-underline-white">
+                             <a href="categories.html" 
+                                class="fs-13 px-3 py-3 d-inline-block fw-700 text-white header_menu_links hov-bg-black-10
+                                ">
+                             Vocation software
+                             </a>
+                          </li>
+                          <li class="list-inline-item mr-0 animate-underline-white">
+                             <a href="sellers.html" 
+                                class="fs-13 px-3 py-3 d-inline-block fw-700 text-white header_menu_links hov-bg-black-10
+                                ">
+                            Office and Business software
+                             </a>
+                          </li>
+                       </ul>
+                    </div>
+                 </div>         
+            </div>
+        </div>
+        <!-- Categoty Menus -->
+        <div class="hover-category-menu position-absolute w-100 top-100 left-0 right-0 z-3 d-none" id="click-category-menu">
+            <div class="container">
+               <div class="d-flex position-relative">
+                  <div class="position-static">
+                     <div class="aiz-category-menu bg-white rounded-0 border-top" id="category-sidebar" style="width:270px;">
+                        <ul class="list-unstyled categories no-scrollbar mb-0 text-left">
+                           <li class="category-nav-element border border-top-0" data-id="1">
+                              <a href="#" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                              <span class="cat-name has-transition">Learning Softwares</span>
+                              </a>
+                              <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                                 <div class="c-preloader text-center absolute-center">
+                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="category-nav-element border border-top-0" data-id="2">
+                              <a href="#" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">                            
+                              <span class="cat-name has-transition">Teaching &amp; Institution</span>
+                              </a>
+                              <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                                 <div class="c-preloader text-center absolute-center">
+                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="category-nav-element border border-top-0" data-id="3">
+                              <a href="#" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                              <img class="cat-image lazyload mr-2 opacity-60"
+                                 src="public/assets/img/placeholder.jpg"
+                                 data-src="public/uploads/all/kTwoR2hUnTf1y6kAOmt9FUidF6Qo8IK0RkvGVMbi.jpg"
+                                 width="16"
+                                 alt="Computer &amp; Accessories"
+                                 onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                              <span class="cat-name has-transition">Hardware</span>
+                              </a>
+                              <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                                 <div class="c-preloader text-center absolute-center">
+                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="category-nav-element border border-top-0" data-id="4">
+                              <a href="#" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                              <img class="cat-image lazyload mr-2 opacity-60"
+                                 src="public/assets/img/placeholder.jpg"
+                                 data-src="public/uploads/all/vafdWTltz6NGVOA2BOaSC3Y7PPFmxmSHX6KBhn4Z.jpg"
+                                 width="16"
+                                 alt="Automobile &amp; Motorcycle"
+                                 onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                              <span class="cat-name has-transition">Standart Office &amp; Business Software</span>
+                              </a>
+                              <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                                 <div class="c-preloader text-center absolute-center">
+                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="category-nav-element border border-top-0" data-id="5">
+                              <a href="#" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                              <img class="cat-image lazyload mr-2 opacity-60"
+                                 src="public/assets/img/placeholder.jpg"
+                                 data-src="public/uploads/all/7Hpz9FWvKRNENKEXd13gqNPlFxz8LFJgCTFzlZbR.jpg"
+                                 width="16"
+                                 alt="Kids &amp; toy"
+                                 onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                              <span class="cat-name has-transition">Video& e-learning</span>
+                              </a>
+                              <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                                 <div class="c-preloader text-center absolute-center">
+                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="category-nav-element border border-top-0" data-id="6">
+                              <a href="category/sports-outdoor.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                              <img class="cat-image lazyload mr-2 opacity-60"
+                                 src="public/assets/img/placeholder.jpg"
+                                 data-src="public/uploads/all/jNdturV05yXj1UsPHurYFoJs410G39D5C2bnPGor.jpg"
+                                 width="16"
+                                 alt="Sports &amp; outdoor"
+                                 onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                              <span class="cat-name has-transition">Games</span>
+                              </a>
+                              <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                                 <div class="c-preloader text-center absolute-center">
+                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="category-nav-element border border-top-0" data-id="7">
+                              <a href="category/jewelry-watches.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                              <img class="cat-image lazyload mr-2 opacity-60"
+                                 src="public/assets/img/placeholder.jpg"
+                                 data-src="public/uploads/all/R6AnVQNPd89NvPZelfi4F8rfkbFIiu8XteN74BFz.jpg"
+                                 width="16"
+                                 alt="Jewelry &amp; Watches"
+                                 onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                              <span class="cat-name has-transition">Books</span>
+                              </a>
+                              <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                                 <div class="c-preloader text-center absolute-center">
+                                    <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Top Menu Sidebar -->
+<div class="aiz-top-menu-sidebar collapse-sidebar-wrap sidebar-xl sidebar-left d-lg-none z-1035">
+    <div class="overlay overlay-fixed dark c-pointer" data-toggle="class-toggle" data-target=".aiz-top-menu-sidebar" data-same=".hide-top-menu-bar"></div>
+    <div class="collapse-sidebar c-scrollbar-light text-left toggle">
+       <button type="button" class="btn btn-sm p-4 hide-top-menu-bar" data-toggle="class-toggle" data-target=".aiz-top-menu-sidebar" >
+       <i class="las la-times la-2x text-primary"></i>
+       </button>
+       <!--Login & Registration -->
+       <span class="d-flex align-items-center nav-user-info pl-4">
+          <!-- Image -->
+          <span class="size-40px rounded-circle overflow-hidden border d-flex align-items-center justify-content-center nav-user-img">
+             <svg xmlns="http://www.w3.org/2000/svg" width="19.902" height="20.012" viewBox="0 0 19.902 20.012">
+                <path id="fe2df171891038b33e9624c27e96e367" d="M15.71,12.71a6,6,0,1,0-7.42,0,10,10,0,0,0-6.22,8.18,1.006,1.006,0,1,0,2,.22,8,8,0,0,1,15.9,0,1,1,0,0,0,1,.89h.11a1,1,0,0,0,.88-1.1,10,10,0,0,0-6.25-8.19ZM12,12a4,4,0,1,1,4-4A4,4,0,0,1,12,12Z" transform="translate(-2.064 -1.995)" fill="#91919b"/>
+             </svg>
+          </span>
+          <a href="users/login.html" class="text-reset opacity-60 hov-opacity-100 hov-text-primary fs-12 d-inline-block border-right border-soft-light border-width-2 pr-2 ml-3">Login</a>
+          <a href="users/registration.html" class="text-reset opacity-60 hov-opacity-100 hov-text-primary fs-12 d-inline-block py-2 pl-2">Registration</a>
+       </span>
+       <hr>
+       <div class="toggle">
+       <h6>All Category</h6>
+       </div>
+       <hr>
+       <ul class="mb-0 pl-3 pb-3 h-100">
+          <li class="mr-0">
+             <a href="##" 
+                class="fs-13 px-3 py-3 w-100 d-inline-block fw-700 text-dark">
+            Learning Softwares
+             </a>
+          </li>
+          <li class="mr-0">
+             <a href="flash-deals.html" 
+                class="fs-13 px-3 py-3 w-100 d-inline-block fw-700 text-dark header_menu_links
+                ">
+             Game
+             </a>
+          </li>
+          <li class="mr-0">
+             <a href="blog.html" 
+                class="fs-13 px-3 py-3 w-100 d-inline-block fw-700 text-dark header_menu_links
+                ">
+            Hardware
+             </a>
+          </li>
+          <li class="mr-0">
+             <a href="brands.html" 
+                class="fs-13 px-3 py-3 w-100 d-inline-block fw-700 text-dark header_menu_links
+                ">
+             Video
+             </a>
+          </li>
+          <li class="mr-0">
+             <a href="categories.html" 
+                class="fs-13 px-3 py-3 w-100 d-inline-block fw-700 text-dark header_menu_links
+                ">
+             Standard software 
+             </a>
+          </li>
+       </ul>
+       <br>
+       <br>
+    </div>
+ </div>
+
+<!-- Modal -->
+<div class="modal fade" id="order_details" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div id="order-details-modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sliders & Today's deal -->
+<div class="home-banner-area mb-3" style="">
+    <div class="container">
+    <div class="d-flex flex-wrap position-relative">
+    <div class="position-static d-none d-xl-block">
+       <div class="aiz-category-menu bg-white rounded-0 border-top" id="category-sidebar" style="width:270px;">
+          <ul class="list-unstyled categories no-scrollbar mb-0 text-left">
+             <li class="category-nav-element border border-top-0" data-id="1">
+                <a href="category/women-clothing-fashion.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Learning Software</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="2">
+                <a href="category/men-clothing-fashion.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Teacher &amp; Institution</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="3">
+                <a href="category/computer-accessories.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Hardware</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="4">
+                <a href="category/automobile-motorcycle.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Games</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="5">
+                <a href="category/kids-toy.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Books</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="6">
+                <a href="category/sports-outdoor.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Video& e-learning</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="6">
+                <a href="category/sports-outdoor.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Video& e-learning</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="6">
+                <a href="category/sports-outdoor.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Video& e-learning</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="6">
+                <a href="category/sports-outdoor.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Video& e-learning</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+             <li class="category-nav-element border border-top-0" data-id="7">
+                <a href="category/jewelry-watches.html" class="text-truncate text-dark px-4 fs-14 d-block hov-column-gap-1">
+                <span class="cat-name has-transition">Standard Office &amp; Business Software</span>
+                </a>
+                <div class="sub-cat-menu c-scrollbar-light border p-4 shadow-none">
+                   <div class="c-preloader text-center absolute-center">
+                      <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                   </div>
+                </div>
+             </li>
+          </ul>
+       </div>
+    </div>  
+    <!-- Sliders -->
+<div class="home-slider">
+    <div class="aiz-carousel dots-inside-bottom mobile-img-auto-height" data-autoplay="true">
+       <div class="carousel-box">
+          <a href="#">
+             <!-- Image -->
+             <img class="d-block mw-100 img-fit overflow-hidden h-sm-auto h-md-320px h-lg-460px overflow-hidden"
+                src="public/assets/img/banner1.png"
+                alt="Active eCommerce CMS promo"
+                onerror="this.onerror=null;this.src='public/assets/img/placeholder-rect.jpg';">
+          </a>
+       </div>
+       <div class="carousel-box">
+          <a href="#">
+             <!-- Image -->
+             <img class="d-block mw-100 img-fit overflow-hidden h-sm-auto h-md-320px h-lg-460px overflow-hidden"
+                src="public/assets/img/banner2.png"
+                alt="Active eCommerce CMS promo"
+                onerror="this.onerror=null;this.src='public/assets/img/placeholder-rect.jpg';">
+          </a>
+       </div>
+    </div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+    <!-- Featured Categories -->
+<section class="mb-2 mb-md-3 mt-2 mt-md-3">
+    <div class="container">
+       <div class="bg-white">
+          <!-- Top Section -->
+          <div class="d-flex mb-2 mb-md-3 align-items-baseline justify-content-between">
+             <!-- Title -->
+             <h3 class="fs-16 fs-md-20 fw-700 mb-2 mb-sm-0">
+                <span class="">Featured Courses</span>
+             </h3>
+             <!-- Links -->
+             <div class="d-flex">
+                <a class="text-blue fs-10 fs-md-12 fw-700 hov-text-primary animate-underline-primary" href="#">View All Courses</a>
+             </div>
+          </div>
+       </div>
+       <!-- Categories -->
+       <div class="bg-white px-sm-3">
+          <div class="aiz-carousel sm-gutters-17" data-items="8" data-xxl-items="8" data-xl-items="6" data-lg-items="5" data-md-items="4" data-sm-items="3" data-xs-items="2" data-arrows="true" data-dots="false" data-autoplay="true" data-infinite="true">
+             <div class="carousel-box position-relative text-center has-transition hov-scale-img hov-animate-outline border-right border-top border-bottom  border-left ">
+                <a href="#" class="d-block">
+                <img src="public/assets/img/math.png" class="lazyload h-130px mx-auto has-transition p-2 p-sm-4 mw-100">
+                </a>
+                <h6 class="text-dark mb-3 h-40px text-truncate-2">
+                   <a class="text-reset fw-700 fs-14 hov-text-primary" href="#" title="Women Clothing &amp; Fashion">Mathematics</a>
+                </h6>
+             </div>
+             <div class="carousel-box position-relative text-center has-transition hov-scale-img hov-animate-outline border-right border-top border-bottom ">
+                <a href="#" class="d-block">
+                    <img src="public/assets/img/phy.png" class="lazyload h-130px mx-auto has-transition p-2 p-sm-4 mw-100">
+                </a>
+                <h6 class="text-dark mb-3 h-40px text-truncate-2">
+                   <a class="text-reset fw-700 fs-14 hov-text-primary" href="#" title="Automobile &amp; Motorcycle">Physics</a>
+                </h6>
+             </div>
+             <div class="carousel-box position-relative text-center has-transition hov-scale-img hov-animate-outline border-right border-top border-bottom ">
+                <a href="#" class="d-block">
+                    <img src="public/assets/img/bio.png" class="lazyload h-130px mx-auto has-transition p-2 p-sm-4 mw-100">
+                </a>
+                <h6 class="text-dark mb-3 h-40px text-truncate-2">
+                   <a class="text-reset fw-700 fs-14 hov-text-primary" href="#" title="Kids &amp; toy">Biology</a>
+                </h6>
+             </div>
+             <div class="carousel-box position-relative text-center has-transition hov-scale-img hov-animate-outline border-right border-top border-bottom ">
+                <a href="#" class="d-block">
+                    <img src="public/assets/img/ch.png" class="lazyload h-130px mx-auto has-transition p-2 p-sm-4 mw-100">
+                </a>
+                <h6 class="text-dark mb-3 h-40px text-truncate-2">
+                   <a class="text-reset fw-700 fs-14 hov-text-primary" href="#" title="Sports &amp; outdoor">Chemistry</a>
+                </h6>
+             </div>
+             <div class="carousel-box position-relative text-center has-transition hov-scale-img hov-animate-outline border-right border-top border-bottom ">
+                <a href="#" class="d-block">
+                    <img src="public/assets/img/mu.jpg" class="lazyload h-130px mx-auto has-transition p-2 p-sm-4 mw-100">
+                </a>
+                <h6 class="text-dark mb-3 h-40px text-truncate-2">
+                   <a class="text-reset fw-700 fs-14 hov-text-primary" href="#" title="Jewelry &amp; Watches">Music</a>
+                </h6>
+             </div>
+             <div class="carousel-box position-relative text-center has-transition hov-scale-img hov-animate-outline border-right border-top border-bottom ">
+                <a href="#" class="d-block">
+                    <img src="public/assets/img/geo.jpg" class="lazyload h-130px mx-auto has-transition p-2 p-sm-4 mw-100">
+                </a>
+                <h6 class="text-dark mb-3 h-40px text-truncate-2">
+                   <a class="text-reset fw-700 fs-14 hov-text-primary" href="#" title="Mobile Phones">Geography</a>
+                </h6>
+             </div>
+          </div>
+       </div>
+    </div>
+</section>
+<!-- New Products -->
+<div id="section_newest">
+    <section class="mb-2 mb-md-3 mt-2 mt-md-3">
+       <div class="container">
+          <!-- Top Section -->
+          <div class="d-flex mb-2 mb-md-3 align-items-baseline justify-content-between">
+             <!-- Title -->
+             <h3 class="fs-16 fs-md-20 fw-700 mb-2 mb-sm-0">
+                <span class="">New Products</span>
+             </h3>
+             <!-- Links -->
+             <div class="d-flex">
+                <a type="button" class="arrow-prev slide-arrow link-disable text-secondary mr-2" onclick="clickToSlide('slick-prev','section_newest')"><i class="las la-angle-left fs-20 fw-600"></i></a>
+                <a class="text-blue fs-10 fs-md-12 fw-700 hov-text-primary animate-underline-primary" href="searche005.html?sort_by=newest">View All</a>
+                <a type="button" class="arrow-next slide-arrow text-secondary ml-2" onclick="clickToSlide('slick-next','section_newest')"><i class="las la-angle-right fs-20 fw-600"></i></a>
+             </div>
+          </div>
+          <!-- Products Section -->
+          <div class="px-sm-3">
+             <div class="aiz-carousel arrow-none sm-gutters-16" data-items="6" data-xl-items="5" data-lg-items="4"  data-md-items="3" data-sm-items="2" data-xs-items="2" data-arrows='true' data-infinite='false'>
+                <div class="carousel-box px-3 position-relative has-transition border-right border-top border-bottom  border-left  hov-animate-outline">
+                   <div class="aiz-card-box h-auto bg-white py-3 hov-scale-img">
+                      <div class="position-relative h-140px h-md-200px img-fit overflow-hidden">
+                         <!-- Image -->
+                         <a href="#" class="d-block h-100">
+                         <img class="lazyload mx-auto img-fit has-transition"
+                            src="public/assets/img/mul.webp" >
+                         </a>
+                         <!-- Discount percentage tag -->
+                         <!-- <span class="absolute-top-left bg-primary ml-1 mt-1 fs-11 fw-700 text-white w-35px text-center" style="padding-top:2px;padding-bottom:2px;">-5%</span> -->
+                         <!-- Wholesale tag -->
+                         <!-- wishlisht & compare icons -->
+                         <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToWishList(161)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.4" viewBox="0 0 16 14.4">
+                                  <g id="_51a3dbe0e593ba390ac13cba118295e4" data-name="51a3dbe0e593ba390ac13cba118295e4" transform="translate(-3.05 -4.178)">
+                                     <path id="Path_32649" data-name="Path 32649" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                     <path id="Path_32650" data-name="Path 32650" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                  </g>
+                               </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToCompare(161)" data-toggle="tooltip" data-title="Add to compare" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                  <path id="_9f8e765afedd47ec9e49cea83c37dfea" data-name="9f8e765afedd47ec9e49cea83c37dfea" d="M18.037,5.547v.8a.8.8,0,0,1-.8.8H7.221a.4.4,0,0,0-.4.4V9.216a.642.642,0,0,1-1.1.454L2.456,6.4a.643.643,0,0,1,0-.909L5.723,2.227a.642.642,0,0,1,1.1.454V4.342a.4.4,0,0,0,.4.4H17.234a.8.8,0,0,1,.8.8Zm-3.685,4.86a.642.642,0,0,0-1.1.454v1.661a.4.4,0,0,1-.4.4H2.84a.8.8,0,0,0-.8.8v.8a.8.8,0,0,0,.8.8H12.854a.4.4,0,0,1,.4.4V17.4a.642.642,0,0,0,1.1.454l3.267-3.268a.643.643,0,0,0,0-.909Z" transform="translate(-2.037 -2.038)" fill="#919199"/>
+                               </svg>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="p-2 p-md-3 text-left">
+                         <!-- Product name -->
+                         <h3 class="fw-400 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px text-center">
+                            <a href="product/apple-iphone-14-pro-128gb-512gb-deep-purple-unlocked.html" class="d-block text-reset hov-text-primary" title="Multiplication Times Table IQ">Multiplication Times Table IQ</a>
+                         </h3>
+                         <div class="fs-14 d-flex justify-content-center mt-3">
+                            <!-- Previous price -->
+                            <div class="disc-amount has-transition">
+                               <!-- <del class="fw-400 text-secondary mr-1">$999.000</del> -->
+                            </div>
+                            <!-- price -->
+                            <div class="">
+                               <span class="fw-700 text-primary">Free</span>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="carousel-box px-3 position-relative has-transition border-right border-top border-bottom  hov-animate-outline">
+                   <div class="aiz-card-box h-auto bg-white py-3 hov-scale-img">
+                      <div class="position-relative h-140px h-md-200px img-fit overflow-hidden">
+                         <!-- Image -->
+                         <a href="product/corsair-k60-rgb-pro-mechanical-gaming-keyboard-cherry-mechanical-keyswitches-durable-aluminumframe-customizable-per-key-rgb-backlighting-black0.html" class="d-block h-100">
+                         <img class="lazyload mx-auto img-fit has-transition"
+                            src="public/assets/img/placeholder.jpg"
+                            data-src="public/uploads/all/xFUsVi21OP7j1eQqo1nHtPZFOiDxHP6CcishuzFK.png"
+                            alt="Corsair K60 RGB Pro Mechanical Gaming Keyboard - CHERRY Mechanical Keyswitches - Durable AluminumFrame - Customizable Per-Key RGB Backlighting, Black" title="Corsair K60 RGB Pro Mechanical Gaming Keyboard - CHERRY Mechanical Keyswitches - Durable AluminumFrame - Customizable Per-Key RGB Backlighting, Black"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                         <!-- Discount percentage tag -->
+                         <span class="absolute-top-left bg-primary ml-1 mt-1 fs-11 fw-700 text-white w-35px text-center" style="padding-top:2px;padding-bottom:2px;">-10%</span>
+                         <!-- Wholesale tag -->
+                         <!-- wishlisht & compare icons -->
+                         <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToWishList(160)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.4" viewBox="0 0 16 14.4">
+                                  <g id="_51a3dbe0e593ba390ac13cba118295e4" data-name="51a3dbe0e593ba390ac13cba118295e4" transform="translate(-3.05 -4.178)">
+                                     <path id="Path_32649" data-name="Path 32649" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                     <path id="Path_32650" data-name="Path 32650" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                  </g>
+                               </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToCompare(160)" data-toggle="tooltip" data-title="Add to compare" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                  <path id="_9f8e765afedd47ec9e49cea83c37dfea" data-name="9f8e765afedd47ec9e49cea83c37dfea" d="M18.037,5.547v.8a.8.8,0,0,1-.8.8H7.221a.4.4,0,0,0-.4.4V9.216a.642.642,0,0,1-1.1.454L2.456,6.4a.643.643,0,0,1,0-.909L5.723,2.227a.642.642,0,0,1,1.1.454V4.342a.4.4,0,0,0,.4.4H17.234a.8.8,0,0,1,.8.8Zm-3.685,4.86a.642.642,0,0,0-1.1.454v1.661a.4.4,0,0,1-.4.4H2.84a.8.8,0,0,0-.8.8v.8a.8.8,0,0,0,.8.8H12.854a.4.4,0,0,1,.4.4V17.4a.642.642,0,0,0,1.1.454l3.267-3.268a.643.643,0,0,0,0-.909Z" transform="translate(-2.037 -2.038)" fill="#919199"/>
+                               </svg>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="p-2 p-md-3 text-left">
+                         <!-- Product name -->
+                         <h3 class="fw-400 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px text-center">
+                            <a href="product/corsair-k60-rgb-pro-mechanical-gaming-keyboard-cherry-mechanical-keyswitches-durable-aluminumframe-customizable-per-key-rgb-backlighting-black0.html" class="d-block text-reset hov-text-primary" title="Corsair K60 RGB Pro Mechanical Gaming Keyboard - CHERRY Mechanical Keyswitches - Durable AluminumFrame - Customizable Per-Key RGB Backlighting, Black">Corsair K60 RGB Pro Mechanical Gaming Keyboard - CHERRY Mechanical Keyswitches - Durable AluminumFrame - Customizable Per-Key RGB Backlighting, Black</a>
+                         </h3>
+                         <div class="fs-14 d-flex justify-content-center mt-3">
+                            <!-- Previous price -->
+                            <div class="disc-amount has-transition">
+                               <del class="fw-400 text-secondary mr-1">$51.000</del>
+                            </div>
+                            <!-- price -->
+                            <div class="">
+                               <span class="fw-700 text-primary">$45.900</span>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="carousel-box px-3 position-relative has-transition border-right border-top border-bottom  hov-animate-outline">
+                   <div class="aiz-card-box h-auto bg-white py-3 hov-scale-img">
+                      <div class="position-relative h-140px h-md-200px img-fit overflow-hidden">
+                         <!-- Image -->
+                         <a href="product/FIFA-22-Standard---PC-Online-Game-Code-22545.html" class="d-block h-100">
+                         <img class="lazyload mx-auto img-fit has-transition"
+                            src="public/assets/img/placeholder.jpg"
+                            data-src="public/uploads/all/4gmGnYIZhgatZRJsxrhXVW2qO0aoLLdZT8U6qOQE.png"
+                            alt="FIFA 22 Standard - PC [Online Game Code]" title="FIFA 22 Standard - PC [Online Game Code]"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                         <!-- Discount percentage tag -->
+                         <span class="absolute-top-left bg-primary ml-1 mt-1 fs-11 fw-700 text-white w-35px text-center" style="padding-top:2px;padding-bottom:2px;">-8%</span>
+                         <!-- Wholesale tag -->
+                         <!-- wishlisht & compare icons -->
+                         <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToWishList(154)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.4" viewBox="0 0 16 14.4">
+                                  <g id="_51a3dbe0e593ba390ac13cba118295e4" data-name="51a3dbe0e593ba390ac13cba118295e4" transform="translate(-3.05 -4.178)">
+                                     <path id="Path_32649" data-name="Path 32649" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                     <path id="Path_32650" data-name="Path 32650" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                  </g>
+                               </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToCompare(154)" data-toggle="tooltip" data-title="Add to compare" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                  <path id="_9f8e765afedd47ec9e49cea83c37dfea" data-name="9f8e765afedd47ec9e49cea83c37dfea" d="M18.037,5.547v.8a.8.8,0,0,1-.8.8H7.221a.4.4,0,0,0-.4.4V9.216a.642.642,0,0,1-1.1.454L2.456,6.4a.643.643,0,0,1,0-.909L5.723,2.227a.642.642,0,0,1,1.1.454V4.342a.4.4,0,0,0,.4.4H17.234a.8.8,0,0,1,.8.8Zm-3.685,4.86a.642.642,0,0,0-1.1.454v1.661a.4.4,0,0,1-.4.4H2.84a.8.8,0,0,0-.8.8v.8a.8.8,0,0,0,.8.8H12.854a.4.4,0,0,1,.4.4V17.4a.642.642,0,0,0,1.1.454l3.267-3.268a.643.643,0,0,0,0-.909Z" transform="translate(-2.037 -2.038)" fill="#919199"/>
+                               </svg>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="p-2 p-md-3 text-left">
+                         <!-- Product name -->
+                         <h3 class="fw-400 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px text-center">
+                            <a href="product/FIFA-22-Standard---PC-Online-Game-Code-22545.html" class="d-block text-reset hov-text-primary" title="FIFA 22 Standard - PC [Online Game Code]">FIFA 22 Standard - PC [Online Game Code]</a>
+                         </h3>
+                         <div class="fs-14 d-flex justify-content-center mt-3">
+                            <!-- Previous price -->
+                            <div class="disc-amount has-transition">
+                               <del class="fw-400 text-secondary mr-1">$59.000</del>
+                            </div>
+                            <!-- price -->
+                            <div class="">
+                               <span class="fw-700 text-primary">$54.000</span>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="carousel-box px-3 position-relative has-transition border-right border-top border-bottom  hov-animate-outline">
+                   <div class="aiz-card-box h-auto bg-white py-3 hov-scale-img">
+                      <div class="position-relative h-140px h-md-200px img-fit overflow-hidden">
+                         <!-- Image -->
+                         <a href="product/Adobe-Premiere-Elements-2022--PCMac-Disc-12646.html" class="d-block h-100">
+                         <img class="lazyload mx-auto img-fit has-transition"
+                            src="public/assets/img/placeholder.jpg"
+                            data-src="public/uploads/all/mcOpWcFWyJ44tZgPgVZQPiX0aATUX7LEtU9nClSk.png"
+                            alt="Adobe Premiere Elements 2022 | PC/Mac Disc" title="Adobe Premiere Elements 2022 | PC/Mac Disc"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                         <!-- Discount percentage tag -->
+                         <span class="absolute-top-left bg-primary ml-1 mt-1 fs-11 fw-700 text-white w-35px text-center" style="padding-top:2px;padding-bottom:2px;">-51%</span>
+                         <!-- Wholesale tag -->
+                         <!-- wishlisht & compare icons -->
+                         <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToWishList(153)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.4" viewBox="0 0 16 14.4">
+                                  <g id="_51a3dbe0e593ba390ac13cba118295e4" data-name="51a3dbe0e593ba390ac13cba118295e4" transform="translate(-3.05 -4.178)">
+                                     <path id="Path_32649" data-name="Path 32649" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                     <path id="Path_32650" data-name="Path 32650" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                  </g>
+                               </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToCompare(153)" data-toggle="tooltip" data-title="Add to compare" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                  <path id="_9f8e765afedd47ec9e49cea83c37dfea" data-name="9f8e765afedd47ec9e49cea83c37dfea" d="M18.037,5.547v.8a.8.8,0,0,1-.8.8H7.221a.4.4,0,0,0-.4.4V9.216a.642.642,0,0,1-1.1.454L2.456,6.4a.643.643,0,0,1,0-.909L5.723,2.227a.642.642,0,0,1,1.1.454V4.342a.4.4,0,0,0,.4.4H17.234a.8.8,0,0,1,.8.8Zm-3.685,4.86a.642.642,0,0,0-1.1.454v1.661a.4.4,0,0,1-.4.4H2.84a.8.8,0,0,0-.8.8v.8a.8.8,0,0,0,.8.8H12.854a.4.4,0,0,1,.4.4V17.4a.642.642,0,0,0,1.1.454l3.267-3.268a.643.643,0,0,0,0-.909Z" transform="translate(-2.037 -2.038)" fill="#919199"/>
+                               </svg>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="p-2 p-md-3 text-left">
+                         <!-- Product name -->
+                         <h3 class="fw-400 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px text-center">
+                            <a href="product/Adobe-Premiere-Elements-2022--PCMac-Disc-12646.html" class="d-block text-reset hov-text-primary" title="Adobe Premiere Elements 2022 | PC/Mac Disc">Adobe Premiere Elements 2022 | PC/Mac Disc</a>
+                         </h3>
+                         <div class="fs-14 d-flex justify-content-center mt-3">
+                            <!-- Previous price -->
+                            <div class="disc-amount has-transition">
+                               <del class="fw-400 text-secondary mr-1">$99.000</del>
+                            </div>
+                            <!-- price -->
+                            <div class="">
+                               <span class="fw-700 text-primary">$49.000</span>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="carousel-box px-3 position-relative has-transition border-right border-top border-bottom  hov-animate-outline">
+                   <div class="aiz-card-box h-auto bg-white py-3 hov-scale-img">
+                      <div class="position-relative h-140px h-md-200px img-fit overflow-hidden">
+                         <!-- Image -->
+                         <a href="product/microsoft-365-personal--12-month-subscription-1-person-premium-office-apps-68431.html" class="d-block h-100">
+                         <img class="lazyload mx-auto img-fit has-transition"
+                            src="public/assets/img/placeholder.jpg"
+                            data-src="public/uploads/all/up4HDGFT9Z72NsnLqVGfZB2kNuMGgczTfq6dNIE7.png"
+                            alt="Microsoft 365 Personal | 12-Month Subscription, 1 person| Premium Office Apps" title="Microsoft 365 Personal | 12-Month Subscription, 1 person| Premium Office Apps"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                         <!-- Discount percentage tag -->
+                         <!-- Wholesale tag -->
+                         <!-- wishlisht & compare icons -->
+                         <div class="absolute-top-right aiz-p-hov-icon">
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToWishList(152)" data-toggle="tooltip" data-title="Add to wishlist" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.4" viewBox="0 0 16 14.4">
+                                  <g id="_51a3dbe0e593ba390ac13cba118295e4" data-name="51a3dbe0e593ba390ac13cba118295e4" transform="translate(-3.05 -4.178)">
+                                     <path id="Path_32649" data-name="Path 32649" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                     <path id="Path_32650" data-name="Path 32650" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                                  </g>
+                               </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="hov-svg-white" onclick="addToCompare(152)" data-toggle="tooltip" data-title="Add to compare" data-placement="left">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                  <path id="_9f8e765afedd47ec9e49cea83c37dfea" data-name="9f8e765afedd47ec9e49cea83c37dfea" d="M18.037,5.547v.8a.8.8,0,0,1-.8.8H7.221a.4.4,0,0,0-.4.4V9.216a.642.642,0,0,1-1.1.454L2.456,6.4a.643.643,0,0,1,0-.909L5.723,2.227a.642.642,0,0,1,1.1.454V4.342a.4.4,0,0,0,.4.4H17.234a.8.8,0,0,1,.8.8Zm-3.685,4.86a.642.642,0,0,0-1.1.454v1.661a.4.4,0,0,1-.4.4H2.84a.8.8,0,0,0-.8.8v.8a.8.8,0,0,0,.8.8H12.854a.4.4,0,0,1,.4.4V17.4a.642.642,0,0,0,1.1.454l3.267-3.268a.643.643,0,0,0,0-.909Z" transform="translate(-2.037 -2.038)" fill="#919199"/>
+                               </svg>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="p-2 p-md-3 text-left">
+                         <!-- Product name -->
+                         <h3 class="fw-400 fs-13 text-truncate-2 lh-1-4 mb-0 h-35px text-center">
+                            <a href="product/microsoft-365-personal--12-month-subscription-1-person-premium-office-apps-68431.html" class="d-block text-reset hov-text-primary" title="Microsoft 365 Personal | 12-Month Subscription, 1 person| Premium Office Apps">Microsoft 365 Personal | 12-Month Subscription, 1 person| Premium Office Apps</a>
+                         </h3>
+                         <div class="fs-14 d-flex justify-content-center mt-3">
+                            <!-- Previous price -->
+                            <!-- price -->
+                            <div class="">
+                               <span class="fw-700 text-primary">$109.000</span>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+ </div>
+    <!-- Featured Products -->
+    <div id="section_featured">
+
+    </div>
+    <!-- Banner Section -->
+    <div class="mb-2 mb-md-3 mt-2 mt-md-3">
+        <div class="container">
+           <div class="aiz-carousel gutters-16 overflow-hidden arrow-inactive-none arrow-dark arrow-x-15" data-items="1" data-xxl-items="1" data-xl-items="1" data-lg-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-arrows="true" data-dots="false">
+              <div class="carousel-box overflow-hidden hov-scale-img">
+                 <a href="blog.html" class="d-block text-reset overflow-hidden">
+                 <img src="public/assets/img/meta.png" 
+                    alt="educi" class="img-fluid lazyload w-100 has-transition">
+                 </a>
+              </div>
+           </div>
+        </div>
+    </div>
+    
+    <!-- Best Selling  -->
+    <div id="section_best_selling">
+
+    </div>
+    <!-- Auction Product -->
+            <div id="auction_products">
+
+        </div>
+    
+    <!-- Cupon -->
+        <div class="mb-2 mb-md-3 mt-2 mt-md-3" style="background-color: #292933">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-xl-8 text-center text-xl-left">
+                    <div class="d-lg-flex">
+                        <div class="mb-3 mb-lg-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.602" height="93.34" viewBox="0 0 109.602 93.34">
+                                <defs>
+                                  <clipPath id="clip-pathcup">
+                                    <path id="Union_10" data-name="Union 10" d="M12263,13778v-15h64v-41h12v56Z" transform="translate(-11966 -8442.865)" fill="none" stroke="#fff" stroke-width="2"/>
+                                  </clipPath>
+                                </defs>
+                                <g id="Group_24326" data-name="Group 24326" transform="translate(-274.201 -5254.611)">
+                                  <g id="Mask_Group_23" data-name="Mask Group 23" transform="translate(-3652.459 1785.452) rotate(-45)" clip-path="url(#clip-pathcup)">
+                                    <g id="Group_24322" data-name="Group 24322" transform="translate(207 18.136)">
+                                      <g id="Subtraction_167" data-name="Subtraction 167" transform="translate(-12177 -8458)" fill="none">
+                                        <path d="M12335,13770h-56a8.009,8.009,0,0,1-8-8v-8a8,8,0,0,0,0-16v-8a8.009,8.009,0,0,1,8-8h56a8.009,8.009,0,0,1,8,8v8a8,8,0,0,0,0,16v8A8.009,8.009,0,0,1,12335,13770Z" stroke="none"/>
+                                        <path d="M 12335.0009765625 13768.0009765625 C 12338.3095703125 13768.0009765625 12341.0009765625 13765.30859375 12341.0009765625 13762 L 12341.0009765625 13755.798828125 C 12336.4423828125 13754.8701171875 12333.0009765625 13750.8291015625 12333.0009765625 13746 C 12333.0009765625 13741.171875 12336.4423828125 13737.130859375 12341.0009765625 13736.201171875 L 12341.0009765625 13729.9990234375 C 12341.0009765625 13726.6904296875 12338.3095703125 13723.9990234375 12335.0009765625 13723.9990234375 L 12278.9990234375 13723.9990234375 C 12275.6904296875 13723.9990234375 12272.9990234375 13726.6904296875 12272.9990234375 13729.9990234375 L 12272.9990234375 13736.201171875 C 12277.5576171875 13737.1298828125 12280.9990234375 13741.1708984375 12280.9990234375 13746 C 12280.9990234375 13750.828125 12277.5576171875 13754.869140625 12272.9990234375 13755.798828125 L 12272.9990234375 13762 C 12272.9990234375 13765.30859375 12275.6904296875 13768.0009765625 12278.9990234375 13768.0009765625 L 12335.0009765625 13768.0009765625 M 12335.0009765625 13770.0009765625 L 12278.9990234375 13770.0009765625 C 12274.587890625 13770.0009765625 12270.9990234375 13766.412109375 12270.9990234375 13762 L 12270.9990234375 13754 C 12275.4111328125 13753.9990234375 12278.9990234375 13750.4111328125 12278.9990234375 13746 C 12278.9990234375 13741.5888671875 12275.41015625 13738 12270.9990234375 13738 L 12270.9990234375 13729.9990234375 C 12270.9990234375 13725.587890625 12274.587890625 13721.9990234375 12278.9990234375 13721.9990234375 L 12335.0009765625 13721.9990234375 C 12339.412109375 13721.9990234375 12343.0009765625 13725.587890625 12343.0009765625 13729.9990234375 L 12343.0009765625 13738 C 12338.5888671875 13738.0009765625 12335.0009765625 13741.5888671875 12335.0009765625 13746 C 12335.0009765625 13750.4111328125 12338.58984375 13754 12343.0009765625 13754 L 12343.0009765625 13762 C 12343.0009765625 13766.412109375 12339.412109375 13770.0009765625 12335.0009765625 13770.0009765625 Z" stroke="none" fill="#fff"/>
+                                      </g>
+                                    </g>
+                                  </g>
+                                  <g id="Group_24321" data-name="Group 24321" transform="translate(-3514.477 1653.317) rotate(-45)">
+                                    <g id="Subtraction_167-2" data-name="Subtraction 167" transform="translate(-12177 -8458)" fill="none">
+                                      <path d="M12335,13770h-56a8.009,8.009,0,0,1-8-8v-8a8,8,0,0,0,0-16v-8a8.009,8.009,0,0,1,8-8h56a8.009,8.009,0,0,1,8,8v8a8,8,0,0,0,0,16v8A8.009,8.009,0,0,1,12335,13770Z" stroke="none"/>
+                                      <path d="M 12335.0009765625 13768.0009765625 C 12338.3095703125 13768.0009765625 12341.0009765625 13765.30859375 12341.0009765625 13762 L 12341.0009765625 13755.798828125 C 12336.4423828125 13754.8701171875 12333.0009765625 13750.8291015625 12333.0009765625 13746 C 12333.0009765625 13741.171875 12336.4423828125 13737.130859375 12341.0009765625 13736.201171875 L 12341.0009765625 13729.9990234375 C 12341.0009765625 13726.6904296875 12338.3095703125 13723.9990234375 12335.0009765625 13723.9990234375 L 12278.9990234375 13723.9990234375 C 12275.6904296875 13723.9990234375 12272.9990234375 13726.6904296875 12272.9990234375 13729.9990234375 L 12272.9990234375 13736.201171875 C 12277.5576171875 13737.1298828125 12280.9990234375 13741.1708984375 12280.9990234375 13746 C 12280.9990234375 13750.828125 12277.5576171875 13754.869140625 12272.9990234375 13755.798828125 L 12272.9990234375 13762 C 12272.9990234375 13765.30859375 12275.6904296875 13768.0009765625 12278.9990234375 13768.0009765625 L 12335.0009765625 13768.0009765625 M 12335.0009765625 13770.0009765625 L 12278.9990234375 13770.0009765625 C 12274.587890625 13770.0009765625 12270.9990234375 13766.412109375 12270.9990234375 13762 L 12270.9990234375 13754 C 12275.4111328125 13753.9990234375 12278.9990234375 13750.4111328125 12278.9990234375 13746 C 12278.9990234375 13741.5888671875 12275.41015625 13738 12270.9990234375 13738 L 12270.9990234375 13729.9990234375 C 12270.9990234375 13725.587890625 12274.587890625 13721.9990234375 12278.9990234375 13721.9990234375 L 12335.0009765625 13721.9990234375 C 12339.412109375 13721.9990234375 12343.0009765625 13725.587890625 12343.0009765625 13729.9990234375 L 12343.0009765625 13738 C 12338.5888671875 13738.0009765625 12335.0009765625 13741.5888671875 12335.0009765625 13746 C 12335.0009765625 13750.4111328125 12338.58984375 13754 12343.0009765625 13754 L 12343.0009765625 13762 C 12343.0009765625 13766.412109375 12339.412109375 13770.0009765625 12335.0009765625 13770.0009765625 Z" stroke="none" fill="#fff"/>
+                                    </g>
+                                    <g id="Group_24325" data-name="Group 24325">
+                                      <rect id="Rectangle_18578" data-name="Rectangle 18578" width="8" height="2" transform="translate(120 5287)" fill="#fff"/>
+                                      <rect id="Rectangle_18579" data-name="Rectangle 18579" width="8" height="2" transform="translate(132 5287)" fill="#fff"/>
+                                      <rect id="Rectangle_18581" data-name="Rectangle 18581" width="8" height="2" transform="translate(144 5287)" fill="#fff"/>
+                                      <rect id="Rectangle_18580" data-name="Rectangle 18580" width="8" height="2" transform="translate(108 5287)" fill="#fff"/>
+                                    </g>
+                                  </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="ml-lg-3">
+                            <h5 class="fs-36 fw-400 text-white mb-3">Save your time and get things</h5>
+                            <h5 class="fs-20 fw-400 text-gray">Best Search engeen for education and related  software </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 text-center text-xl-right mt-4">
+                    <a href="coupons.html" class="btn text-white hov-bg-white hov-text-dark border border-width-2 fs-16 px-4" style="border-radius: 28px;background: rgba(255, 255, 255, 0.2);box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.16);">View All Coupons</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Category wise Products -->
+    <div id="section_home_categories" class="mb-2 mb-md-3 mt-2 mt-md-3">
+
+    </div>
+<!-- Classified Product -->
+<section class="mb-2 mb-md-3 mt-2 mt-md-3">
+    <div class="container">
+       <!-- Top Section -->
+       <div class="d-flex mb-2 mb-md-3 align-items-baseline justify-content-between">
+          <!-- Title -->
+          <h3 class="fs-16 fs-md-20 fw-700 mb-2 mb-sm-0">
+             <span class="">Top Search Product</span>
+          </h3>
+          <!-- Links -->
+          <div class="d-flex">
+             <a class="text-blue fs-10 fs-md-12 fw-700 hov-text-primary animate-underline-primary" href="customer-products.html">View All Products</a>
+          </div>
+       </div>
+       <!-- Products Section -->
+       <div class="bg-white">
+          <div class="row no-gutters border-top border-left">
+             <div class="col-xl-4 col-md-6 border-right border-bottom has-transition hov-shadow-out z-1">
+                <div class="aiz-card-box p-2 has-transition bg-white">
+                   <div class="row hov-scale-img">
+                      <div class="col-4 col-md-5 mb-3 mb-md-0">
+                         <a href="#l" class="d-block overflow-hidden h-auto h-md-150px text-center">
+                         <img class="img-fluid lazyload mx-auto has-transition"
+                            src="public/assets/img/photo.png"
+                            alt="Photomath"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                      </div>
+                      <div class="col">
+                         <h3 class="fw-400 fs-14 text-dark text-truncate-2 lh-1-4 mb-3 h-35px d-none d-sm-block">
+                            <a href="#" class="d-block text-reset hov-text-primary">Photomath</a>
+                         </h3>
+                         <div class="fs-14 mb-3">
+                            <span class="text-secondary">EDUCI</span><br>
+                            <span class="fw-700 text-primary">€52.000</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-4 col-md-6 border-right border-bottom has-transition hov-shadow-out z-1">
+                <div class="aiz-card-box p-2 has-transition bg-white">
+                   <div class="row hov-scale-img">
+                      <div class="col-4 col-md-5 mb-3 mb-md-0">
+                         <a href="#" class="d-block overflow-hidden h-auto h-md-150px text-center">
+                         <img class="img-fluid lazyload mx-auto has-transition"
+                            src="public/assets/img/XML.jpg"
+                           
+                            alt="xml"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                      </div>
+                      <div class="col">
+                         <h3 class="fw-400 fs-14 text-dark text-truncate-2 lh-1-4 mb-3 h-35px d-none d-sm-block">
+                            <a href="#" class="d-block text-reset hov-text-primary">XML</a>
+                         </h3>
+                         <div class="fs-14 mb-3">
+                            <span class="text-secondary">EDUCI</span><br>
+                            <span class="fw-700 text-primary">Free</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-4 col-md-6 border-right border-bottom has-transition hov-shadow-out z-1">
+                <div class="aiz-card-box p-2 has-transition bg-white">
+                   <div class="row hov-scale-img">
+                      <div class="col-4 col-md-5 mb-3 mb-md-0">
+                         <a href="#" class="d-block overflow-hidden h-auto h-md-150px text-center">
+                         <img class="img-fluid lazyload mx-auto has-transition"
+                            src="public/assets/img/skY.jpg"
+                           
+                            alt="SkyView® Explore the Universe"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                      </div>
+                      <div class="col">
+                         <h3 class="fw-400 fs-14 text-dark text-truncate-2 lh-1-4 mb-3 h-35px d-none d-sm-block">
+                            <a href="#" class="d-block text-reset hov-text-primary">SkyView® Explore the Universe</a>
+                         </h3>
+                         <div class="fs-14 mb-3">
+                            <span class="text-secondary">SOFTWAREEULE</span><br>
+                            <span class="fw-700 text-primary">€4,99</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-4 col-md-6 border-right border-bottom has-transition hov-shadow-out z-1">
+                <div class="aiz-card-box p-2 has-transition bg-white">
+                   <div class="row hov-scale-img">
+                      <div class="col-4 col-md-5 mb-3 mb-md-0">
+                         <a href="#" class="d-block overflow-hidden h-auto h-md-150px text-center">
+                         <img class="img-fluid lazyload mx-auto has-transition"
+                            src="public/assets/img/placeholder.jpg"
+                            data-src="public/uploads/all/WxdyhMANvTFIWWLyKvaxYoeabBILYXUlZOBj4I6N.jpg"
+                            alt="Mi Smart Router 4C, 300 Mbps with 4 high-Performance Antenna &amp; App Control"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                      </div>
+                      <div class="col">
+                         <h3 class="fw-400 fs-14 text-dark text-truncate-2 lh-1-4 mb-3 h-35px d-none d-sm-block">
+                            <a href="#" class="d-block text-reset hov-text-primary">Mi Smart Router 4C, 300 Mbps with 4 high-Performance Antenna &amp; App Control</a>
+                         </h3>
+                         <div class="fs-14 mb-3">
+                            <span class="text-secondary">EDUCI</span><br>
+                            <span class="fw-700 text-primary">€30.000</span>
+                         </div>
+                         <span class="badge badge-inline badge-soft-info fs-13 fw-700 p-3 text-info" style="border-radius: 20px;">new</span>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-4 col-md-6 border-right border-bottom has-transition hov-shadow-out z-1">
+                <div class="aiz-card-box p-2 has-transition bg-white">
+                   <div class="row hov-scale-img">
+                      <div class="col-4 col-md-5 mb-3 mb-md-0">
+                         <a href="customer-product/canon-pixma-ts3320-black-works-with-alexa-87ole.html" class="d-block overflow-hidden h-auto h-md-150px text-center">
+                         <img class="img-fluid lazyload mx-auto has-transition"
+                            src="public/assets/img/desk.webp"
+                          
+                            alt="HIGH END GAMING PC | AMD Ryzen 7 5800X 8x3.80GHz | 16GB DDR4 | RTX 3070 8GB | 500GB M.2 SSD + 2TB HDD"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                      </div>
+                      <div class="col">
+                         <h3 class="fw-400 fs-14 text-dark text-truncate-2 lh-1-4 mb-3 h-35px d-none d-sm-block">
+                            <a href="customer-product/canon-pixma-ts3320-black-works-with-alexa-87ole.html" class="d-block text-reset hov-text-primary">Canon Pixma TS3320 Black, Works with Alexa</a>
+                         </h3>
+                         <div class="fs-14 mb-3">
+                            <span class="text-secondary">SOFTWAREHEXE</span><br>
+                            <span class="fw-700 text-primary">€1.750,37</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-4 col-md-6 border-right border-bottom has-transition hov-shadow-out z-1">
+                <div class="aiz-card-box p-2 has-transition bg-white">
+                   <div class="row hov-scale-img">
+                      <div class="col-4 col-md-5 mb-3 mb-md-0">
+                         <a href="#" class="d-block overflow-hidden h-auto h-md-150px text-center">
+                         <img class="img-fluid lazyload mx-auto has-transition"
+                            src="public/assets/img/kis.jpg"
+                            
+                            alt="Kaspersky Internet Security 2022 1 Gerät 1 Jahr"
+                            onerror="this.onerror=null;this.src='public/assets/img/placeholder.jpg';">
+                         </a>
+                      </div>
+                      <div class="col">
+                         <h3 class="fw-400 fs-14 text-dark text-truncate-2 lh-1-4 mb-3 h-35px d-none d-sm-block">
+                            <a href="#" class="d-block text-reset hov-text-primary">Kaspersky Internet Security 2022 1 Gerät 1 Jahr</a>
+                         </h3>
+                         <div class="fs-14 mb-3">
+                            <span class="text-secondary">LICENSIX</span><br>
+                            <span class="fw-700 text-primary">€120.000</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+<!-- Top Sellers -->
+<section class="mb-2 mb-md-3 mt-2 mt-md-3">
+    <div class="container">
+       <!-- Top Section -->
+       <div class="d-flex mb-2 mb-md-3 align-items-baseline justify-content-between">
+          <!-- Title -->
+          <h3 class="fs-16 fs-md-20 fw-700 mb-2 mb-sm-0">
+             <span class="pb-3">Top Vendor</span>
+          </h3>
+          <!-- Links -->
+          <div class="d-flex">
+             <a class="text-blue fs-10 fs-md-12 fw-700 hov-text-primary animate-underline-primary" href="#">View All Vendors</a>
+          </div>
+       </div>
+       <!-- Sellers Section -->
+       <div class="aiz-carousel arrow-x-0 arrow-inactive-none" data-items="5" data-xxl-items="5" data-xl-items="4" data-lg-items="3.4" data-md-items="2.5" data-sm-items="2" data-xs-items="1.4" data-arrows="true" data-dots="false">
+          <div class="carousel-box h-100 position-relative text-center border-right border-top border-bottom  border-left  has-transition hov-animate-outline">
+             <div class="position-relative px-3" style="padding-top: 2rem; padding-bottom:2rem;">
+                <!-- Shop logo & Verification Status -->
+                <div class="">
+                   <a href="#">
+                   <img src="public/assets/img/li.png " alt="Li" class="vendor-img">
+                   </a>
+                </div>
+                <!-- Shop name -->
+                <h2 class="fs-14 fw-700 text-dark text-truncate-2 h-40px mt-3 mt-md-4 mb-0 mb-md-3">
+                   <a href="#" class="text-reset hov-text-primary" tabindex="0">Licensequeen</a>
+                </h2>
+                <!-- Shop Rating -->
+                <div class="rating rating-mr-1 text-dark mb-3">
+                   <i class = 'las la-star active'></i><i class = 'las la-star active'></i><i class = 'las la-star active'></i><i class = 'las la-star active'></i><i class = 'las la-star active'></i>
+                   <span class="opacity-60 fs-14">(0
+                   reviews)</span>
+                </div>
+                <!-- Visit Button -->
+                <a href="#" class="btn-visit">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Visit Store</span>
+                </a>
+             </div>
+          </div>
+          <div class="carousel-box h-100 position-relative text-center border-right border-top border-bottom  has-transition hov-animate-outline">
+             <div class="position-relative px-3" style="padding-top: 2rem; padding-bottom:2rem;">
+                <!-- Shop logo & Verification Status -->
+                <div class="">
+                    <a href="#">
+                        <img src="public/assets/img/lz.png " alt="Li" class="vendor-img">
+                    </a>
+                </div>
+                <!-- Shop name -->
+                <h2 class="fs-14 fw-700 text-dark text-truncate-2 h-40px mt-3 mt-md-4 mb-0 mb-md-3">
+                   <a href="shop/Filon-Asset-Store-2.html" class="text-reset hov-text-primary" tabindex="0">Lizenzexpress</a>
+                </h2>
+                <!-- Shop Rating -->
+                <div class="rating rating-mr-1 text-dark mb-3">
+                   <i class = 'las la-star active'></i><i class = 'las la-star active'></i><i class = 'las la-star active'></i><i class = 'las la-star active'></i><i class = 'las la-star active'></i>
+                   <span class="opacity-60 fs-14">(1
+                   reviews)</span>
+                </div>
+                <!-- Visit Button -->
+                <a href="shop/Filon-Asset-Store-2.html" class="btn-visit">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Visit Store</span>
+                </a>
+             </div>
+          </div>
+          <div class="carousel-box h-100 position-relative text-center border-right border-top border-bottom  has-transition hov-animate-outline">
+             <div class="position-relative px-3" style="padding-top: 2rem; padding-bottom:2rem;">
+                <!-- Shop logo & Verification Status -->
+                <div class="">
+                    <a href="#">
+                        <img src="public/assets/img/lx.png " alt="Li" class="vendor-img">
+                    </a>
+                </div>
+                <!-- Shop name -->
+                <h2 class="fs-14 fw-700 text-dark text-truncate-2 h-40px mt-3 mt-md-4 mb-0 mb-md-3">
+                   <a href="shop/Adidas-12.html" class="text-reset hov-text-primary" tabindex="0">Licensix</a>
+                </h2>
+                <!-- Shop Rating -->
+                <div class="rating rating-mr-1 text-dark mb-3">
+                   <i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i>
+                   <span class="opacity-60 fs-14">(0
+                   reviews)</span>
+                </div>
+                <!-- Visit Button -->
+                <a href="shop/Adidas-12.html" class="btn-visit">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Visit Store</span>
+                </a>
+             </div>
+          </div>
+          <div class="carousel-box h-100 position-relative text-center border-right border-top border-bottom  has-transition hov-animate-outline">
+             <div class="position-relative px-3" style="padding-top: 2rem; padding-bottom:2rem;">
+                <!-- Shop logo & Verification Status -->
+                <div class="">
+                    <a href="">
+                        <img src="public/assets/img/li.png " alt="Li" class="vendor-img">
+                    </a>
+                </div>
+                <!-- Shop name -->
+                <h2 class="fs-14 fw-700 text-dark text-truncate-2 h-40px mt-3 mt-md-4 mb-0 mb-md-3">
+                   <a href="shop/LOUIS-VUITTON-13.html" class="text-reset hov-text-primary" tabindex="0">Softwareule</a>
+                </h2>
+                <!-- Shop Rating -->
+                <div class="rating rating-mr-1 text-dark mb-3">
+                   <i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i>
+                   <span class="opacity-60 fs-14">(0
+                   reviews)</span>
+                </div>
+                <!-- Visit Button -->
+                <a href="shop/LOUIS-VUITTON-13.html" class="btn-visit">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Visit Store</span>
+                </a>
+             </div>
+          </div>
+          <div class="carousel-box h-100 position-relative text-center border-right border-top border-bottom  has-transition hov-animate-outline">
+             <div class="position-relative px-3" style="padding-top: 2rem; padding-bottom:2rem;">
+                <!-- Shop logo & Verification Status -->
+                <div class="">
+                    <a href="#">
+                        <img src="public/assets/img/li.png " alt="Li" class="vendor-img">
+                </div>
+                <!-- Shop name -->
+                <h2 class="fs-14 fw-700 text-dark text-truncate-2 h-40px mt-3 mt-md-4 mb-0 mb-md-3">
+                   <a href="#" class="text-reset hov-text-primary" tabindex="0">Licensequeen</a>
+                </h2>
+                <!-- Shop Rating -->
+                <div class="rating rating-mr-1 text-dark mb-3">
+                   <i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i><i class = 'las la-star'></i>
+                   <span class="opacity-60 fs-14">(0
+                   reviews)</span>
+                </div>
+                <!-- Visit Button -->
+                <a href="#" class="btn-visit">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Visit Store</span>
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section> 
+<!-- Top Brands -->
+<section class="mb-2 mb-md-3 mt-2 mt-md-3">
+    <div class="container">
+       <!-- Top Section -->
+       <div class="d-flex mb-2 mb-md-3 align-items-baseline justify-content-between">
+          <!-- Title -->
+          <h3 class="fs-16 fs-md-20 fw-700 mb-2 mb-sm-0">Top Brands</h3>
+          <!-- Links -->
+          <div class="d-flex">
+             <a class="text-blue fs-10 fs-md-12 fw-700 hov-text-primary animate-underline-primary" href="#">View All Brands</a>
+          </div>
+       </div>
+       <!-- Brands Section -->
+       <div class="bg-white px-3">
+          <div class="row row-cols-xxl-6 row-cols-xl-6 row-cols-lg-4 row-cols-md-4 row-cols-3 gutters-16 border-top border-left"> 
+             <div class="col text-center border-right border-bottom hov-scale-img has-transition hov-shadow-out z-1">
+                <a href="#" class="d-block p-sm-3">
+                   <img src="public/assets/img/mc.png" class="lazyload h-md-100px mx-auto has-transition p-2 p-sm-4 mw-100">
+                   <p class="text-center text-dark fs-12 fs-md-14 fw-700 mt-2">Microsoft</p>
+                </a>
+             </div>
+             <div class="col text-center border-right border-bottom hov-scale-img has-transition hov-shadow-out z-1">
+                <a href="#" class="d-block p-sm-3">
+                   <img src="public/assets/img/hp.png" class="lazyload h-md-100px mx-auto has-transition p-2 p-sm-4 mw-100">
+                   <p class="text-center text-dark fs-12 fs-md-14 fw-700 mt-2">HP</p>
+                </a>
+             </div>
+             <div class="col text-center border-right border-bottom hov-scale-img has-transition hov-shadow-out z-1">
+                <a href="#" class="d-block p-sm-3">
+                   <img src="public/assets/img/ksi.jpg" 
+                   class="lazyload h-md-100px mx-auto has-transition p-2 p-sm-4 mw-100">
+                   <p class="text-center text-dark fs-12 fs-md-14 fw-700 mt-2">KSI</p>
+                </a>
+             </div>
+             <div class="col text-center border-right border-bottom hov-scale-img has-transition hov-shadow-out z-1">
+                <a href="#" class="d-block p-sm-3">
+                   <img src="public/assets/img/md.png" class="lazyload h-md-100px mx-auto has-transition p-2 p-sm-4 mw-100" >
+                   <p class="text-center text-dark fs-12 fs-md-14 fw-700 mt-2">Moodle</p>
+                </a>
+             </div>
+             <div class="col text-center border-right border-bottom hov-scale-img has-transition hov-shadow-out z-1">
+                <a href="#" class="d-block p-sm-3">
+                   <img src="public/assets/img/mt.png" class="lazyload h-md-100px mx-auto has-transition p-2 p-sm-4 mw-100">
+                   <p class="text-center text-dark fs-12 fs-md-14 fw-700 mt-2">Metaverse</p>
+                </a>
+             </div>
+             <div class="col text-center border-right border-bottom hov-scale-img has-transition hov-shadow-out z-1">
+                <a href="#" class="d-block p-sm-3">
+                   <img src="public/assets/img/dell.png" class="lazyload h-md-100px mx-auto has-transition p-2 p-sm-4 mw-100">
+                   <p class="text-center text-dark fs-12 fs-md-14 fw-700 mt-2">Dell</p>
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+<!-- footer top Bar -->
+<section class="bg-light border-top mt-auto">
+    <div class="container px-xs-0">
+        <div class="row no-gutters border-left border-soft-light">
+            <!-- Terms & conditions -->
+            <div class="col-lg-3 col-6 policy-file">
+                <a class="text-reset h-100  border-right border-bottom border-soft-light text-center p-2 p-md-4 d-block hov-ls-1" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26.004" height="32" viewBox="0 0 26.004 32">
+                        <path id="Union_8" data-name="Union 8" d="M-14508,18932v-.01a6.01,6.01,0,0,1-5.975-5.492h-.021v-14h1v13.5h0a4.961,4.961,0,0,0,4.908,4.994h.091v0h14v1Zm17-4v-1a2,2,0,0,0,2-2h1a3,3,0,0,1-2.927,3Zm-16,0a3,3,0,0,1-3-3h1a2,2,0,0,0,2,2h16v1Zm18-3v-16.994h-4v-1h3.6l-5.6-5.6v3.6h-.01a2.01,2.01,0,0,0,2,2v1a3.009,3.009,0,0,1-3-3h.01v-4h.6l0,0H-14507a2,2,0,0,0-2,2v22h-1v-22a3,3,0,0,1,3-3v0h12l0,0,7,7-.01.01V18925Zm-16-4.992v-1h12v1Zm0-4.006v-1h12v1Zm0-4v-1h12v1Z" transform="translate(14513.998 -18900.002)" fill="#919199"/>
+                    </svg>
+                    <h4 class="text-dark fs-14 fw-700 mt-3">Terms &amp; conditions</h4>
+                </a>
+            </div>
+            
+            <!-- Return Policy -->
+            <div class="col-lg-3 col-6 policy-file">
+                <a class="text-reset h-100  border-right border-bottom border-soft-light text-center p-2 p-md-4 d-block hov-ls-1" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.001" height="23.971" viewBox="0 0 32.001 23.971">
+                        <path id="Union_7" data-name="Union 7" d="M-14490,18922.967a6.972,6.972,0,0,0,4.949-2.051,6.944,6.944,0,0,0,2.052-4.943,7.008,7.008,0,0,0-7-7v0h-22.1l7.295,7.295-.707.707-7.779-7.779-.708-.707.708-.7,7.774-7.779.712.707-7.261,7.258H-14490v0a8.01,8.01,0,0,1,8,8,8.008,8.008,0,0,1-8,8Z" transform="translate(14514.001 -18900)" fill="#919199"/>
+                    </svg>
+                    <h4 class="text-dark fs-14 fw-700 mt-3">COOKIE POLICY</h4>
+                </a>
+            </div>
+
+            <!-- Support Policy -->
+            <div class="col-lg-3 col-6 policy-file">
+                <a class="text-reset h-100  border-right border-bottom border-soft-light text-center p-2 p-md-4 d-block hov-ls-1" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.002" height="32.002" viewBox="0 0 32.002 32.002">
+                        <g id="Group_24198" data-name="Group 24198" transform="translate(-1113.999 -2398)">
+                        <path id="Subtraction_14" data-name="Subtraction 14" d="M-14508,18916h0l-1,0a12.911,12.911,0,0,1,3.806-9.187A12.916,12.916,0,0,1-14496,18903a12.912,12.912,0,0,1,9.193,3.811A12.9,12.9,0,0,1-14483,18916l-1,0a11.918,11.918,0,0,0-3.516-8.484A11.919,11.919,0,0,0-14496,18904a11.921,11.921,0,0,0-8.486,3.516A11.913,11.913,0,0,0-14508,18916Z" transform="translate(15626 -16505)" fill="#919199"/>
+                        <path id="Subtraction_15" data-name="Subtraction 15" d="M-14510,18912h-1a3,3,0,0,1-3-3v-6a3,3,0,0,1,3-3h1a2,2,0,0,1,2,2v8A2,2,0,0,1-14510,18912Zm-1-11a2,2,0,0,0-2,2v6a2,2,0,0,0,2,2h1a1,1,0,0,0,1-1v-8a1,1,0,0,0-1-1Z" transform="translate(15628 -16489)" fill="#919199"/>
+                        <path id="Subtraction_19" data-name="Subtraction 19" d="M4,12H3A3,3,0,0,1,0,9V3A3,3,0,0,1,3,0H4A2,2,0,0,1,6,2v8A2,2,0,0,1,4,12ZM3,1A2,2,0,0,0,1,3V9a2,2,0,0,0,2,2H4a1,1,0,0,0,1-1V2A1,1,0,0,0,4,1Z" transform="translate(1146.002 2423) rotate(180)" fill="#919199"/>
+                        <path id="Subtraction_17" data-name="Subtraction 17" d="M-14512,18908a2,2,0,0,1-2-2v-4a2,2,0,0,1,2-2,2,2,0,0,1,2,2v4A2,2,0,0,1-14512,18908Zm0-7a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1,1,1,0,0,0,1-1v-4A1,1,0,0,0-14512,18901Z" transform="translate(20034 16940.002) rotate(90)" fill="#919199"/>
+                        <rect id="Rectangle_18418" data-name="Rectangle 18418" width="1" height="4.001" transform="translate(1137.502 2427.502) rotate(90)" fill="#919199"/>
+                        <path id="Intersection_1" data-name="Intersection 1" d="M-14508.5,18910a4.508,4.508,0,0,0,4.5-4.5h1a5.508,5.508,0,0,1-5.5,5.5Z" transform="translate(15646.004 -16482.5)" fill="#919199"/>
+                        </g>
+                    </svg>
+                    <h4 class="text-dark fs-14 fw-700 mt-3">DATA PROTECTION</h4>
+                </a>
+            </div>
+
+            <!-- Privacy Policy -->
+            <div class="col-lg-3 col-6 policy-file">
+                <a class="text-reset h-100 border-right border-bottom border-soft-light text-center p-2 p-md-4 d-block hov-ls-1" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <g id="Group_24236" data-name="Group 24236" transform="translate(-1454.002 -2430.002)">
+                        <path id="Subtraction_11" data-name="Subtraction 11" d="M-14498,18932a15.894,15.894,0,0,1-11.312-4.687A15.909,15.909,0,0,1-14514,18916a15.884,15.884,0,0,1,4.685-11.309A15.9,15.9,0,0,1-14498,18900a15.909,15.909,0,0,1,11.316,4.688A15.885,15.885,0,0,1-14482,18916a15.9,15.9,0,0,1-4.687,11.316A15.909,15.909,0,0,1-14498,18932Zm0-31a14.9,14.9,0,0,0-10.605,4.393A14.9,14.9,0,0,0-14513,18916a14.9,14.9,0,0,0,4.395,10.607A14.9,14.9,0,0,0-14498,18931a14.9,14.9,0,0,0,10.607-4.393A14.9,14.9,0,0,0-14483,18916a14.9,14.9,0,0,0-4.393-10.607A14.9,14.9,0,0,0-14498,18901Z" transform="translate(15968 -16470)" fill="#919199"/>
+                        <g id="Group_24196" data-name="Group 24196" transform="translate(0 -1)">
+                            <rect id="Rectangle_18406" data-name="Rectangle 18406" width="2" height="10" transform="translate(1469 2440)" fill="#919199"/>
+                            <rect id="Rectangle_18407" data-name="Rectangle 18407" width="2" height="2" transform="translate(1469 2452)" fill="#919199"/>
+                        </g>
+                        </g>
+                    </svg>
+                    <h4 class="text-dark fs-14 fw-700 mt-3">TERMS & CONDITIONS</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-lg-3 text-light footer-widget" style="background-color: #212129 !important;">
+    <!-- footer widgets ========== [Accordion Fotter widgets are bellow from this]-->
+    <div class="container d-none d-lg-block">
+       <div class="row">
+          <!-- Contacts -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="text-center text-sm-left mt-4">
+               <h4 class="fs-14 text-secondary text-uppercase fw-700 mb-3">Contacts</h4>
+            </div>
+         </div>
+          <!-- Quick links -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+             <div class="text-center text-sm-left mt-4">
+                <h4 class="fs-14 text-secondary text-uppercase fw-700 mb-3">
+                   Quick Links
+                </h4>
+             </div>
+          </div>
+          <!-- My Account -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+             <div class="text-center text-sm-left mt-4">
+                <h4 class="fs-14 text-secondary text-uppercase fw-700 mb-3">My Account</h4>
+             </div>
+          </div>
+          <!-- Seller & Delivery Boy -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+             <div class="text-center text-sm-left mt-4">
+                <!-- Seller -->
+                <h4 class="fs-14 text-secondary text-uppercase fw-700 mb-3">Vendors</h4>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-- Accordion Fotter widgets -->
+    <div class="d-lg-none bg-transparent">
+       <!-- Quick links -->
+       <div class="aiz-accordion-wrap bg-black">
+          <div class="aiz-accordion-heading container bg-black">
+             <button class="aiz-accordion fs-14 text-white bg-transparent">Quick Links</button>
+          </div>
+          <div class="aiz-accordion-panel bg-transparent" style="background-color: #212129 !important;">
+             <div class="container">
+                <ul class="list-unstyled mt-3">
+                   <li class="mb-2 pb-2 ">
+                      <a href="sellerpolicy.html" class="fs-13 text-soft-light text-sm-secondary animate-underline-white">
+                      Support Policy Page
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a href="returnpolicy.html" class="fs-13 text-soft-light text-sm-secondary animate-underline-white">
+                      Return Policy Page
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a href="aboutus.html" class="fs-13 text-soft-light text-sm-secondary animate-underline-white">
+                      About Us
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a href="privacypolicy.html" class="fs-13 text-soft-light text-sm-secondary animate-underline-white">
+                      Privacy Policy Page
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a href="sellerpolicy.html" class="fs-13 text-soft-light text-sm-secondary animate-underline-white">
+                      Seller Policy
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a href="terms.html" class="fs-13 text-soft-light text-sm-secondary animate-underline-white">
+                      Term Conditions Page
+                      </a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+       <!-- Contacts -->
+       <div class="aiz-accordion-wrap bg-black">
+          <div class="aiz-accordion-heading container bg-black">
+             <button class="aiz-accordion fs-14 text-white bg-transparent">Contacts</button>
+          </div>
+          <div class="aiz-accordion-panel bg-transparent" style="background-color: #212129 !important;">
+             <div class="container">
+                <ul class="list-unstyled mt-3">
+                   <li class="mb-2">
+                      <p  class="fs-13 text-secondary mb-1">Address</p>
+                      <p  class="fs-13 text-soft-light">Demo Address</p>
+                   </li>
+                   <li class="mb-2">
+                      <p  class="fs-13 text-secondary mb-1">Phone</p>
+                      <p  class="fs-13 text-soft-light">123456789</p>
+                   </li>
+                   <li class="mb-2">
+                      <p  class="fs-13 text-secondary mb-1">Email</p>
+                      <p  class="">
+                         <a href="#" class="fs-13 text-soft-light hov-text-primary"><span class="__cf_email__" data-cfemail="96f2f3fbf9b8f3eef7fbe6faf3d6f1fbf7fffab8f5f9fb">[email&#160;protected]</span></a>
+                      </p>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+       <!-- My Account -->
+       <div class="aiz-accordion-wrap bg-black">
+          <div class="aiz-accordion-heading container bg-black">
+             <button class="aiz-accordion fs-14 text-white bg-transparent">My Account</button>
+          </div>
+          <div class="aiz-accordion-panel bg-transparent" style="background-color: #212129 !important;">
+             <div class="container">
+                <ul class="list-unstyled mt-3">
+                   <li class="mb-2 pb-2 ">
+                      <a class="fs-13 text-soft-light text-sm-secondary animate-underline-white" href="users/login.html">
+                      Login
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a class="fs-13 text-soft-light text-sm-secondary animate-underline-white" href="users/login.html">
+                      Order History
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a class="fs-13 text-soft-light text-sm-secondary animate-underline-white" href="users/login.html">
+                      My Wishlist
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a class="fs-13 text-soft-light text-sm-secondary animate-underline-white" href="track-your-order.html">
+                      Track Order
+                      </a>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a class="fs-13 text-soft-light text-sm-secondary animate-underline-white" href="affiliate.html">
+                      Be an affiliate partner
+                      </a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+       <!-- Seller -->
+       <div class="aiz-accordion-wrap bg-black">
+          <div class="aiz-accordion-heading container bg-black">
+             <button class="aiz-accordion fs-14 text-white bg-transparent">Seller Zone</button>
+          </div>
+          <div class="aiz-accordion-panel bg-transparent" style="background-color: #212129 !important;">
+             <div class="container">
+                <ul class="list-unstyled mt-3">
+                   <li class="mb-2 pb-2 ">
+                      <p class="fs-13 text-soft-light text-sm-secondary mb-0">
+                         Become A Seller 
+                         <a href="shops/create.html" class="fs-13 fw-700 text-warning ml-2">Apply Now</a>
+                      </p>
+                   </li>
+                   <li class="mb-2 pb-2 ">
+                      <a class="fs-13 text-soft-light text-sm-secondary animate-underline-white" href="seller/login.html">
+                      Login to Seller Panel
+                      </a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+       <!-- Delivery Boy -->
+       <div class="aiz-accordion-wrap bg-black">
+          <div class="aiz-accordion-heading container bg-black">
+             <button class="aiz-accordion fs-14 text-white bg-transparent">Delivery Boy</button>
+          </div>
+          <div class="aiz-accordion-panel bg-transparent" style="background-color: #212129 !important;">
+             <div class="container">
+                <ul class="list-unstyled mt-3">
+                   <li class="mb-2 pb-2 ">
+                      <a class="fs-13 text-soft-light text-sm-secondary animate-underline-white" href="#">
+                      Login to Delivery Boy Panel
+                      </a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+<!-- FOOTER -->
+<footer class="pt-3 pb-7 pb-xl-3 bg-black text-soft-light">
+    <div class="container">
+       <div class="row align-items-center py-3">
+          <!-- Copyright -->
+          <div class="col-lg-12 order-1 order-lg-0">
+             <div class="text-center fs-14">
+                © e-duci 2022
+             </div>
+          </div>
+       </div>
+    </div>
+ </footer>
+
+<!-- Mobile bottom nav -->
+<div class="aiz-mobile-bottom-nav d-xl-none fixed-bottom border-top border-sm-bottom border-sm-left border-sm-right mx-auto mb-sm-2" style="background-color: rgb(255 255 255 / 90%)!important;">
+    <div class="row align-items-center gutters-5">
+        <!-- Home -->
+        <div class="col">
+            <a href="#" class="text-secondary d-block text-center pb-2 pt-3 svg-active">
+                <svg xmlns="#" width="16" height="16" viewBox="0 0 16 16">
+                    <g id="Group_24768" data-name="Group 24768" transform="translate(3495.144 -602)">
+                      <path id="Path_2916" data-name="Path 2916" d="M15.3,5.4,9.561.481A2,2,0,0,0,8.26,0H7.74a2,2,0,0,0-1.3.481L.7,5.4A2,2,0,0,0,0,6.92V14a2,2,0,0,0,2,2H14a2,2,0,0,0,2-2V6.92A2,2,0,0,0,15.3,5.4M10,15H6V9A1,1,0,0,1,7,8H9a1,1,0,0,1,1,1Zm5-1a1,1,0,0,1-1,1H11V9A2,2,0,0,0,9,7H7A2,2,0,0,0,5,9v6H2a1,1,0,0,1-1-1V6.92a1,1,0,0,1,.349-.76l5.74-4.92A1,1,0,0,1,7.74,1h.52a1,1,0,0,1,.651.24l5.74,4.92A1,1,0,0,1,15,6.92Z" transform="translate(-3495.144 602)" fill="#b5b5bf"/>
+                    </g>
+                </svg>
+                <span class="d-block mt-1 fs-10 fw-600 text-reset text-primary">Home</span>
+            </a>
+        </div>
+
+        <!-- Categories -->
+        <div class="col">
+            <a href="#" class="text-secondary d-block text-center pb-2 pt-3 ">
+                <svg xmlns="#" width="16" height="16" viewBox="0 0 16 16">
+                    <g id="Group_25497" data-name="Group 25497" transform="translate(3373.432 -602)">
+                      <path id="Path_2917" data-name="Path 2917" d="M126.713,0h-5V5a2,2,0,0,0,2,2h3a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2m1,5a1,1,0,0,1-1,1h-3a1,1,0,0,1-1-1V1h4a1,1,0,0,1,1,1Z" transform="translate(-3495.144 602)" fill="#91919c"/>
+                      <path id="Path_2918" data-name="Path 2918" d="M144.713,18h-3a2,2,0,0,0-2,2v3a2,2,0,0,0,2,2h5V20a2,2,0,0,0-2-2m1,6h-4a1,1,0,0,1-1-1V20a1,1,0,0,1,1-1h3a1,1,0,0,1,1,1Z" transform="translate(-3504.144 593)" fill="#91919c"/>
+                      <path id="Path_2919" data-name="Path 2919" d="M143.213,0a3.5,3.5,0,1,0,3.5,3.5,3.5,3.5,0,0,0-3.5-3.5m0,6a2.5,2.5,0,1,1,2.5-2.5,2.5,2.5,0,0,1-2.5,2.5" transform="translate(-3504.144 602)" fill="#91919c"/>
+                      <path id="Path_2920" data-name="Path 2920" d="M125.213,18a3.5,3.5,0,1,0,3.5,3.5,3.5,3.5,0,0,0-3.5-3.5m0,6a2.5,2.5,0,1,1,2.5-2.5,2.5,2.5,0,0,1-2.5,2.5" transform="translate(-3495.144 593)" fill="#91919c"/>
+                    </g>
+                </svg>
+                <span class="d-block mt-1 fs-10 fw-600 text-reset ">Categories</span>
+            </a>
+        </div>
+        <!-- Wishilist-->
+        <div class="col-auto">
+            <a href="#" class="text-secondary d-block text-center pb-2 pt-3 px-3 ">
+                <span class="position-relative d-inline-block">
+                    <svg  width="16" height="14.4" viewBox="0 0 16 14.4">
+                       <g id="_51a3dbe0e593ba390ac13cba118295e4" data-name="51a3dbe0e593ba390ac13cba118295e4" transform="translate(-3.05 -4.178)">
+                           <path id="Path_32649" data-name="Path 32649" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                            <path id="Path_32650" data-name="Path 32650" d="M11.3,5.507l-.247.246L10.8,5.506A4.538,4.538,0,1,0,4.38,11.919l.247.247,6.422,6.412,6.422-6.412.247-.247A4.538,4.538,0,1,0,11.3,5.507Z" transform="translate(0 0)" fill="#919199"/>
+                        </g>
+                    </svg>
+                </span>
+                <span class="d-block mt-1 fs-10 fw-600 text-reset ">
+                    Wishilist
+                    (<span class="cart-count">0</span>)
+                </span>
+            </a>
+        </div>
+
+        <!-- Notifications -->
+        <div class="col">
+            <a href="u#" class="text-secondary d-block text-center pb-2 pt-3 ">
+                <span class="d-inline-block position-relative px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13.6" height="16" viewBox="0 0 13.6 16">
+                        <path id="ecf3cc267cd87627e58c1954dc6fbcc2" d="M5.488,14.056a.617.617,0,0,0-.8-.016.6.6,0,0,0-.082.855A2.847,2.847,0,0,0,6.835,16h0l.174-.007a2.846,2.846,0,0,0,2.048-1.1h0l.053-.073a.6.6,0,0,0-.134-.782.616.616,0,0,0-.862.081,1.647,1.647,0,0,1-.334.331,1.591,1.591,0,0,1-2.222-.331H5.55ZM6.828,0C4.372,0,1.618,1.732,1.306,4.512h0v1.45A3,3,0,0,1,.6,7.37a.535.535,0,0,0-.057.077A3.248,3.248,0,0,0,0,9.088H0l.021.148a3.312,3.312,0,0,0,.752,2.2,3.909,3.909,0,0,0,2.5,1.232,32.525,32.525,0,0,0,7.1,0,3.865,3.865,0,0,0,2.456-1.232A3.264,3.264,0,0,0,13.6,9.249h0v-.1a3.361,3.361,0,0,0-.582-1.682h0L12.96,7.4a3.067,3.067,0,0,1-.71-1.408h0V4.54l-.039-.081a.612.612,0,0,0-1.132.208h0v1.45a.363.363,0,0,0,0,.077,4.21,4.21,0,0,0,.979,1.957,2.022,2.022,0,0,1,.312,1h0v.155a2.059,2.059,0,0,1-.468,1.373,2.656,2.656,0,0,1-1.661.788,32.024,32.024,0,0,1-6.87,0,2.663,2.663,0,0,1-1.7-.824,2.037,2.037,0,0,1-.447-1.33h0V9.151a2.1,2.1,0,0,1,.305-1.007A4.212,4.212,0,0,0,2.569,6.187a.363.363,0,0,0,0-.077h0V4.653a4.157,4.157,0,0,1,4.2-3.442,4.608,4.608,0,0,1,2.257.584h0l.084.042A.615.615,0,0,0,9.649,1.8.6.6,0,0,0,9.624.739,5.8,5.8,0,0,0,6.828,0Z" fill="#91919b"/>
+                    </svg>
+                                    </span>
+                <span class="d-block mt-1 fs-10 fw-600 text-reset ">Notifications</span>
+            </a>
+        </div>
+
+        <!-- Account -->
+        <div class="col">
+                            <a href="users/login.html" class="text-secondary d-block text-center pb-2 pt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <g id="Group_8094" data-name="Group 8094" transform="translate(3176 -602)">
+                          <path id="Path_2924" data-name="Path 2924" d="M331.144,0a4,4,0,1,0,4,4,4,4,0,0,0-4-4m0,7a3,3,0,1,1,3-3,3,3,0,0,1-3,3" transform="translate(-3499.144 602)" fill="#b5b5bf"/>
+                          <path id="Path_2925" data-name="Path 2925" d="M332.144,20h-10a3,3,0,0,0,0,6h10a3,3,0,0,0,0-6m0,5h-10a2,2,0,0,1,0-4h10a2,2,0,0,1,0,4" transform="translate(-3495.144 592)" fill="#b5b5bf"/>
+                        </g>
+                    </svg>
+                    <span class="d-block mt-1 fs-10 fw-600 text-reset">My Account</span>
+                </a>
+                    </div>
+
+    </div>
+</div>
+<!-- User Side nav -->
+    </div>
+    <!-- cookies agreement -->
+    <!-- website popup -->
+    <!-- SCRIPTS -->
+    <script src="public/assets/js/vendors.js"></script>
+    <script src="public/assets/js/aiz-core45b6.js?v=2785"></script>
+</body>
+</html>

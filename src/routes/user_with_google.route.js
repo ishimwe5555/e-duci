@@ -5,6 +5,9 @@ import { userControllers } from '../controllers';
 
 const userRouter = express.Router();
 
+userRouter.get('/', (req, res)=> {
+  res.status(200).send("Hello world")
+})
 userRouter.get('/users/login/google', (req, res) => {
   res
     .status(200)

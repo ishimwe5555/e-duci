@@ -15,11 +15,13 @@ import router from './routes';
 import { errorHandler } from './middleware';
 import sockets from './helpers/notifications';
 import { chats } from './helpers';
+import { log } from 'console';
 // import job from './jobs/index.js';
 
 const app = express();
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const https = require('https').Server(app);
+const io = require('socket.io')(https);
+const serverIP = 'https://vm1035.tmdcloud.eu'; // Replace 'YOUR_IP_ADDRESS' with the desired IP
 
 chats.chats(io);
 dotenv.config();
@@ -50,12 +52,13 @@ app.use('/', router);
 
 app.use(errorHandler);
 
-const server = app.listen(PORT);
+const server = app.listen(PORT, serverIP);
 
 // job.CroneJobs();
 
 // job.cron();
-
+console.log('connecting....');
 io.listen(server);
+console.log(`Server is running at ${serverIP}:${PORT}`);
 
 export default server;
