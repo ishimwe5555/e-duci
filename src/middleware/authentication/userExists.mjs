@@ -1,4 +1,4 @@
-import { userServices } from '../../services';
+import { userServices } from '../../services/index.mjs';
 
 const userEmailExists = async (req, res, next) => {
   const user = await userServices.getUserByEmail(req.body.email);

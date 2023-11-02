@@ -11,10 +11,10 @@ import bodyParser from 'body-parser';
 import passport from 'passport';
 import cookieParser from 'cookie-parser';
 import options from './docs/apidoc.js';
-import router from './routes';
-import { errorHandler } from './middleware';
-import sockets from './helpers/notifications';
-import { chats } from './helpers';
+import router from './routes/index.js';
+import { errorHandler } from './middleware/index.mjs';
+import sockets from './helpers/notifications.js';
+import { chats } from './helpers/index.mjs';
 // import job from './jobs/index.js';
 
 const app = express();
