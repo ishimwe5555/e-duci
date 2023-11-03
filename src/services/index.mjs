@@ -10,7 +10,7 @@ import reviewsServices from './reviews.service.js';
 import cartServices from './cart.services.js';
 import notificationServices from './notification.services.js';
 import readNotificationService from './read_notification.service.js';
-import userProfileServices from './userProfile.service.js';
+// import userProfileServices from './userProfile.service.js';
 // import orderServices from './order.service.js';
 import chatServices from './chat.service.js';
 import categoryServices from './categories.service.js';
@@ -25,7 +25,7 @@ export {
   reviewsServices,
   notificationServices,
   readNotificationService,
-  userProfileServices,
+  //userProfileServices,
   chatServices,
   categoryServices,
   vendorServices,

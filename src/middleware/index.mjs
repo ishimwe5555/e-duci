@@ -2,7 +2,7 @@ import isAuthenticated from './authentication/authentication.js';
 import {
   userEmailExists,
   userUsernameExists,
-} from './authentication/userExists.mjs';
+} from './authentication/userExists.js';
 import validate from './validation/validation.js';
 // import {
 //   isCollectionExists,
