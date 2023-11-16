@@ -1,5 +1,5 @@
 import { redisClient } from '../../helpers';
-import { decodeToken } from '../../utils';
+import { decodeToken } from '../../utils/index.mjs';
 
 const isActive = (res, next, status) => {
   if (status === 'INACTIVE') {

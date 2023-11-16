@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import errorMessage from '../errormessage';
+import errorMessage from '../errormessage.mjs';
 
 const addPaymentSchema = Joi.object().keys({
   cardNumber: Joi.number().required().messages(errorMessage('cardNumber')),

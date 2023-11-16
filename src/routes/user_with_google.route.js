@@ -1,7 +1,7 @@
 import express from 'express';
 import passport from 'passport';
-import '../middleware/passport.js';
-import { userControllers } from '../controllers';
+import '../middleware/passport.mjs';
+import { userControllers } from '../controllers/index.mjs';
 
 const userRouter = express.Router();
 

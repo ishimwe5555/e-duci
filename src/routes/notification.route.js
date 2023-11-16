@@ -3,7 +3,7 @@ import path from 'path';
 import { isAuthenticated } from '../middleware';
 import { asyncWrapper } from '../helpers';
 import notificationServices from '../services/notification.services';
-import { readNotificationController } from '../controllers';
+import { readNotificationController } from '../controllers/index.mjs';
 
 const router = Router();
 

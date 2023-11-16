@@ -1,4 +1,4 @@
-import Reviews from '../database/models/reviews.model';
+import Reviews from '../database/models/reviews.model.mjs';
 
 async function getReviews(productId) {
   const reviews = await Reviews.findAll({ where: { productId } });

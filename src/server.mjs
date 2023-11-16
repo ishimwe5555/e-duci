@@ -1,5 +1,3 @@
-import '@babel/polyfill';
-import '@babel/register';
 import express from 'express';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
@@ -10,20 +8,17 @@ import swaggerUi from 'swagger-ui-express';
 import bodyParser from 'body-parser';
 import passport from 'passport';
 import cookieParser from 'cookie-parser';
-import options from './docs/apidoc.js';
-import router from './routes/index.js';
+import http from 'http';
+import { Server } from 'socket.io';
+import options from './docs/apidoc.mjs';
+import router from './routes/index.mjs';
 import { errorHandler } from './middleware/index.mjs';
-import sockets from './helpers/notifications.js';
-import { chats } from './helpers/index.mjs';
-// import job from './jobs/index.js';
 
 const app = express();
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const server = http.createServer(app);
+const io = new Server(server);
 
-chats.chats(io);
 dotenv.config();
-sockets(io);
 const { PORT } = process.env;
 
 app.use(morgan('tiny'));
@@ -50,12 +45,8 @@ app.use('/', router);
 
 app.use(errorHandler);
 
-const server = app.listen(PORT);
+const serverInstance = server.listen(PORT);
 
-// job.CroneJobs();
+io.listen(serverInstance);
 
-// job.cron();
-
-io.listen(server);
-
-export default server;
+export default serverInstance;

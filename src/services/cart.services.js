@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-cycle
 import { redisClient } from '../helpers';
-import Products from '../database/models/products.model';
-import Images from '../database/models/images.model';
+import Products from '../database/models/products.model.mjs';
+import Images from '../database/models/images.model.mjs';
 
 async function createCart(id) {
   await redisClient.set(`cart_${id}`, JSON.stringify([]));

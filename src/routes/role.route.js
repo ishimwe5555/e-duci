@@ -1,5 +1,5 @@
 import express from 'express';
-import { roleControllers } from '../controllers';
+import { roleControllers } from '../controllers/index.mjs';
 import isAuthenticated from '../middleware/authentication/authentication';
 import validateRole from '../utils/roleValidator';
 import checkPermission from '../middleware/checkPermission.middleware';

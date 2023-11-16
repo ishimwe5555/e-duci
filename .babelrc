@@ -8,5 +8,16 @@
         }
       }
     ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"], // Base directory for resolving modules
+        "alias": {
+          "^/": "./" // Map / to the root directory
+        }
+      }
+    ]
   ]
 }

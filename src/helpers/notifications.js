@@ -1,5 +1,5 @@
-import notificationServices from '../services/notification.services';
-import { chats } from './index';
+import notificationServices from '../services/notification.services.js';
+import chats from './chats.mjs';
 
 function sockets(io) {
   io.on('connection', async (socket) => {

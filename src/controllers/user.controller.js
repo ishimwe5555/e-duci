@@ -12,11 +12,11 @@ import {
   decodeResetPasswordToken,
   decodeToken,
   hashPassword,
-} from '../utils';
+} from '../utils/index.mjs';
 import { userServices, userProfileServices } from '../services';
 
 import twoFactorAuth from '../services/twofactor.service';
-import verifyOldPassword from '../helpers/verifyPassword';
+import verifyOldPassword from '../helpers/verifyPassword.mjs';
 
 const signUp = async (req, res, next) => {
   passport.authenticate('signup', { session: false }, (err, user) => {

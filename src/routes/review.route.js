@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import cookieParser from 'cookie-parser';
-import { reviewControllers } from '../controllers';
+import { reviewControllers } from '../controllers/index.mjs';
 import { isAuthenticated, validate } from '../middleware';
-import { reviewSchema } from '../utils';
+import { reviewSchema } from '../utils/index.mjs';
 import { asyncWrapper } from '../helpers';
 
 const router = Router();

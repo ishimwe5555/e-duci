@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import cookieParser from 'cookie-parser';
 import { isAuthenticated } from '../middleware';
-import { wishesController } from '../controllers';
+import { wishesController } from '../controllers/index.mjs';
 
 const router = Router();
 
